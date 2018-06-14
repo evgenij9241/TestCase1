@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g fill="none" fill-rule="nonzero">
+    <path class="fp-fill-a fp-stroke" stroke-width="3" d="M130 89.91A40.19 40.19 0 0 1 89.9 130C67.8 130 50 111.94 50 89.91A40 40 0 0 1 89.9 50c21.93 0 40.1 17.88 40.1 39.91z"/>
+    <path class="fp-fill-a fp-stroke" stroke-width="3" d="M121.85 115l-1.4 1.6-1.05 1.42-1.4 1.6 1.4 6.76L146.9 152l4.02-4.8 1.05-1.43 4.03-4.8-27.67-25.26z"/>
+    <path class="fp-fill-b" d="M64.3 102.26a29.4 29.4 0 0 1 15.5-38.47 1.97 1.97 0 1 0-1.56-3.63 33.33 33.33 0 0 0-17.6 43.64 1.99 1.99 0 0 0 3.66-1.54z"/>
+  </g>
+</svg>

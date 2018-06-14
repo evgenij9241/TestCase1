@@ -1,0 +1,48 @@
+<div class="fp-option-group">
+  <div class="fp-option-group__holder">
+    <label class="fp-option fp-option--block" ng-repeat="(key, option) in options track by $index">
+      <div class="fp-thumbnail__label fp-thumbnail__label--freespins fp-game-campaign__label" ng-if="option.fsAmount">
+        {{option.fsAmount}}
+        <fp-icon-svg name="icon-freespins-w" size="sm" class="fp-game-campaign__fs"></fp-icon-svg>
+      </div>
+      <input type="radio"
+             id="{{name + '_'+ $index}}"
+             tabindex="0"
+             name="{{name}}"
+             ng-value="option['value']"
+             ng-model="group.model">
+      <div class="fp-option__content {{option.fsIconUrl ? (option.unique ? 'fp-option__content--noborder fp-option__content--unique' : 'fp-option__content--noborder') : ''}}">
+        <div class="fp-game-campaign__unique-label" ng-if="option.unique">{{'APP.FIELD.FREESPINS_SHOP.LABEL_UNIQUE' | translate}}</div>
+        <div class="fp-option__content-holder fp-option__content-holder--bonus" ng-if="!option.fsIconUrl">
+          <div class="fp-option__header fp-option__header--bonus" ng-if="!option.fsAmount">{{option.bonus}}</div>
+          <div class="fp-option__description fp-option__description--bonus">
+            {{option.name}}
+            <div class="fp-option__description--subtitle" ng-if="option.subTitle">{{option.subTitle}}</div>
+          </div>
+        </div>
+        <img style="height: 100%; margin: 0 auto" ng-if="option.fsIconUrl"
+             ng-src="{{option.fsIconUrl}}"/>
+      </div>
+    </label>
+
+    <label class="fp-option fp-option--block fp-option--code"  ng-if="promo === 'true'" ng-class="{'fp-option--compact': !showpromo, '': showpromo}">
+      <input type="radio" ng-click="togglePromo()" name="{{name}}" ng-model="group.model" value="{{group.promo}}" >
+      <div class="fp-option__content">
+        <div class="fp-option__content-holder fp-option__content-holder--bonus">
+          <div class="fp-option__header fp-option__header--bonus" ng-class="{'fp-option__header--hidden': showpromo, '': !showpromo}"><label ng-click="togglePromo()">{{'APP.FORM.DEPOSIT.FIELD.BONUS_OPTIONS.PROMO_CODE' | translate}}</label></div>
+          <div class="fp-option__description fp-option__description--bonus" ng-show="showpromo"><input id="input-promo-code" type="text" class="fp-form-input" ng-model="group.promo" ng-focus="focusInput()"/></div>
+        </div>
+      </div>
+    </label>
+
+    <label class="fp-option fp-option--block">
+      <input type="radio" name="{{name}}" ng-model="group.model" value="NO-BONUS" >
+      <div class="fp-option__content">
+        <div class="fp-option__content-holder fp-option__content-holder--bonus">
+          <div class="fp-option__header fp-option__header--bonus" ng-bind-html="'APP.FORM.DEPOSIT.FIELD.BONUS_OPTIONS.NO_BONUS.NO_THANKS' | translate"></div>
+          <div class="fp-option__description fp-option__description--bonus" ng-bind-html="'APP.FORM.DEPOSIT.FIELD.BONUS_OPTIONS.NO_BONUS.PROCEED' | translate"></div>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>

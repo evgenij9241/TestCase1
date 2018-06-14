@@ -1,0 +1,138 @@
+a.fp-btn {
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+  }
+}
+
+.fp-btn {
+  font-family: $fp-font-btn;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $fp-font-weight-btn;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: none;
+  white-space: nowrap;
+
+
+  &--left {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    border-right: 1px solid $btn-primary-border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  &--right {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    border-left: 1px solid $btn-primary-border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--inline {
+    margin-top: 4px;
+    height: 40px;
+    margin-left: 5px;
+  }
+
+  @media (max-width: 740px) {
+    font-size: $fp-font-size-s;
+    padding: 13px 20px;
+  }
+
+  @include button-size($fp-padding-base-vertical, $fp-padding-base-horizontal, $fp-font-size-m, $fp-line-height-base, $fp-border-radius-base);
+  @include user-select(none);
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    box-shadow: none;
+  }
+
+  &--default {
+    border: 1px solid #ddd;
+    background: transparent;
+    color: $fp-color-base;
+    text-shadow: none;
+  }
+
+  &--primary {
+      @include fp-button-variant-pnp($btn-primary-color, $btn-primary-bg, $btn-primary-bg-start, $btn-primary-bg-finish);
+  }
+
+  &--success {
+      @include fp-button-variant-pnp($btn-success-color, $btn-success-bg, $btn-success-bg-start, $btn-success-bg-finish);
+  }
+
+  &--secondary {
+    @include fp-button-variant-pnp($btn-primary-color, $btn-secondary-bg, $btn-secondary-bg, $btn-secondary-bg-finish);
+  }
+
+  &--lg {
+    // line-height: ensure even-numbered height of button next to large input
+    @include button-size($fp-padding-large-vertical, $fp-padding-large-horizontal, $fp-font-size-xl, $fp-line-height-base, $fp-border-radius-base);
+    @media (max-width: 740px) {
+      font-size: $fp-font-size-s;
+      padding: 13px 20px;
+    }
+  }
+
+  &--md {
+    // line-height: ensure even-numbered height of button next to large input
+    @include button-size($fp-padding-medium-vertical, $fp-padding-medium-horizontal, $fp-font-size-l, $fp-line-height-base, $fp-border-radius-base);
+    @media (max-width: 740px) {
+      font-size: $fp-font-size-m;
+      padding: 10px 18px;
+    }
+  }
+
+  &--xs {
+    @include button-size($fp-padding-small-vertical, $fp-padding-small-horizontal, $fp-font-size-xs, $fp-line-height-base, $fp-border-radius-base);
+  }
+
+
+
+  // Block button
+  // --------------------------------------------------
+
+  &--block {
+    display: flex;
+    width: 100%;
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+  }
+
+  // Vertically space out multiple block buttons
+  &--block + &--block {
+    margin-top: 4px;
+  }
+
+}
+

@@ -1,0 +1,8 @@
+<div class="{{::gamesList.itemsContainerListClass}}">
+
+  <div class="{{::gamesList.itemListClass}}" ng-repeat="game in gamesList.games track by game.gameId">
+    <fp-thumbnail src="::gamesList.getGameImageUrl(game.name, game.provider)" game="::game" demo-disabled="::gamesList.demoDisabled"></fp-thumbnail>
+  </div>
+
+</div>
+

@@ -1,0 +1,37 @@
+.fp-select {
+  position:relative;
+  width: 100%;
+  user-select: none;
+
+  &__select {
+    cursor:pointer;
+    padding-left: 13px;
+    padding-right:25px;
+
+    user-select: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+}
+
+fp-select {
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: $fp-color-heading-muted transparent transparent transparent;
+    line-height: 0;
+    right:10px;
+    top:7px;
+    position:absolute;
+    pointer-events:none;
+    z-index: 3;
+    body.fp-dark-theme & {
+      border-color: $fp-color-success transparent transparent transparent;
+    }
+  }
+}

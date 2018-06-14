@@ -1,0 +1,50 @@
+$fp-color-bg:            rgb(255, 255, 255);
+$fp-color-bg-brand:      rgb(212, 243, 254);
+$fp-color-shadow:        rgb(167, 229, 251);
+$fp-color-base:          rgb(40, 40, 40);
+//$fp-color-success:       rgb(24, 173, 93);
+$fp-color-success:       rgb(6, 153, 70);
+$fp-color-error:         rgb(239, 100, 77);
+$fp-color-error-bg:      lighten($fp-color-error, 30%);
+$fp-color-contrast:      rgb(242, 197, 0);
+$fp-color-muted:         rgb(136, 136, 136);
+$fp-color-heading:       rgb(29, 71, 128);
+$fp-color-heading-muted: rgb(51, 152, 217);
+$fp-color-input-border:  rgb(163, 229, 253);
+$fp-color-separator:     rgb(202, 229, 246);
+$fp-color-selection-border:     rgb(44, 151, 220);
+$fp-color-selection-bg:  rgb(228, 248, 255);
+$fp-color-unique:        rgb(167, 85, 255);
+$fp-color-unique-highlight:     rgb(226, 106, 238);
+$modal-backdrop-bg:      rgba(0, 0, 0, 0.7);
+
+$btn-primary-color: $fp-color-bg;
+$btn-primary-bg : $fp-color-contrast;
+$btn-primary-border: rgb(242, 165, 25);
+
+$btn-success-color:  $fp-color-bg;
+$btn-success-bg :    $fp-color-success;
+$btn-success-border: darken($fp-color-success, 15%);
+
+
+// DARK
+
+$fp-color-bg-dark:            #212020;
+$fp-color-bg-brand-dark:      #000000;
+$fp-color-shadow-dark:        #000000;
+$fp-color-base-dark:          rgb(200, 200, 200);
+$fp-color-success-dark:       rgb(6, 153, 70);
+$fp-color-error-dark:         rgb(239, 100, 77);
+$fp-color-error-bg-dark:      #5d1f15;
+$fp-color-contrast-dark: rgb(238, 179, 32);
+$fp-color-muted-dark:         rgb(136, 136, 136);
+
+$fp-color-heading-dark: rgb(179, 179, 179);
+$fp-color-heading-muted-dark: rgb(143, 143, 143);
+$fp-color-input-border-dark:  #494949;
+$fp-color-separator-dark: rgb(74, 74, 74);
+$fp-color-selection-border-dark: #494949;
+$fp-color-selection-bg-dark: rgb(65, 65, 65);
+$fp-color-unique-dark:        rgb(167, 85, 255);
+$fp-color-unique-highlight-dark:     rgb(226, 106, 238);
+$modal-backdrop-bg-dark:      rgba(0, 0, 0, 0.7);

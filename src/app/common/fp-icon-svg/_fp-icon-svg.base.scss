@@ -1,0 +1,35 @@
+// ICON-SVG
+
+.fp-icon-svg {
+  display: inline-block;
+  position: relative;
+  line-height:  1;
+  font-size:    0;
+  @include size(16px);
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top:    0;
+    left:   0;
+    bottom: 0;
+    right:  0;
+    background: transparent;
+  }
+
+  &--sm {
+    @include size(19px);
+    top: 5px!important;
+  }
+
+  &--md {
+    @include size(28px);
+    top: 9px!important;
+  }
+
+  &--lg {
+    @include size(48px);
+  }
+
+}

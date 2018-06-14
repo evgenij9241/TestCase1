@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g fill="none" fill-rule="nonzero">
+    <path class="fp-fill-a fp-stroke" stroke-width="3" d="M100.2 69.4C75.8 39.5 34.7 65 48.9 93.8c8.5 17.2 45.5 46.2 51 50.4h.9-.8l.2.2.2-.2c5.5-4.2 42.5-33.2 51-50.4 14.3-28.7-27-54.3-51.2-24.4z"/>
+    <path class="fp-fill-b" d="M58 84c.9-9.7 9.4-16.8 19.2-16a2 2 0 0 0 .3-4c-12-1-22.4 7.7-23.5 19.7a2 2 0 0 0 4 .4z"/>
+  </g>
+</svg>

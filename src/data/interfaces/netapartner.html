@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title></title>
+  <script>
+    var staticServer = getUrlParam(null, 'staticServer');
+    function getUrlParam(url, name) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url || window.location.href);
+      return !results ? null : (!results[2] ? '' : decodeURIComponent(results[2].replace(/\+/g, ' ')));
+    }
+    document.write('<script src="' + staticServer + '/gameinclusion/library/gameinclusion.js"><\/script>')
+  </script>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: url('/images/icons/preloader.gif') center center no-repeat;
+      pointer-events: none;
+    }
+    #error {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 15px;
+      margin: 10px;
+      border: 1px solid #ebccd1;
+      border-radius: 4px;
+      color: #a94442;
+      font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f2dede;
+      z-index: 500;
+    }
+  </style>
+</head>
+<body>
+<div id="game"></div>
+<div id="error"></div>
+
+<script>
+  (function () {
+    'use strict';
+
+    var tableId = getUrlParam(null, 'tableId');
+
+    var config = {
+      gameId: getUrlParam(null, 'gameId'),
+      staticServer: getUrlParam(null, 'staticServer'),
+      gameServer: getUrlParam(null, 'gameServer'),
+      sessionId: getUrlParam(null, 'sessionId'),
+      language: getUrlParam(null, 'language'),
+      targetElement: 'game',
+      mobileParams: {
+        lobbyUrl: getUrlParam(null, 'lobbyUrl'),
+        pluginUrl: window.location.protocol + '//' + window.location.host +
+        '/data/interfaces/netent-plugin.html?staticServer=' + staticServer +
+        '&realitychecktimeout=' + getUrlParam(null, 'realitychecktimeout') +
+        '&duration=' + getUrlParam(null, 'duration')
+      }
+    };
+
+    if (tableId) {
+      config.liveCasinoHost = (getUrlParam(null, "liveServer") || '').match(/([^:]*:\/\/)?([^\/]+\.[^\/]+)/)[2];
+      config.casinoId = getUrlParam(null, 'casinoId');
+      config.tableId = tableId;
+    }
+
+
+    var brand = getUrlParam(null, 'casinoBrand');
+    if (brand) config.casinoBrand = brand;
+
+
+
+    // Init
+    //noinspection JSUnresolvedVariable
+    netent.launch(config, function (/*netEntExtend*/) {
+      // Success
+    }, function (e) {
+      var error = document.getElementById('error');
+      error.innerHTML = '' + (e || {}).message;
+      error.style.display = 'block';
+    });
+
+  })();
+</script>
+</body>
+</html>

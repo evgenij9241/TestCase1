@@ -1,0 +1,290 @@
+// XMAS
+
+.xmas {
+  @keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px; }
+    100% { background-position: 1000px 2000px, 900px 900px, 800px 800px; }
+  }
+
+  &__bg {
+    background: #1b537f;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      height: 120vh;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      //background-image: linear-gradient(to bottom, #3e95d8, #1b537f);
+      //background-image: linear-gradient(to bottom, #eee4a3, #1b537f);
+      background-image: linear-gradient(to bottom, #a0eed6 10%, #1b537f 100%);
+    }
+  }
+  #snow {
+    position: fixed;
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+  }
+  &__snow {
+    display: none;
+    position: fixed;
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-image: url('/assets/images/xmas-snow-bg-front.png'), url('/assets/images/xmas-snow-bg-middle.png'), url('/assets/images/xmas-snow-bg-back.png');
+    //animation: snow 100s linear infinite;
+  }
+
+  &__grass {
+    width: 100%;
+  }
+
+  &__footer {
+    img {
+      width: 100%;
+    }
+  }
+
+  .fp-cashier {
+    background: none;
+    padding-bottom: 0;
+  }
+
+  .fp-cashier__caption {
+    //color: $fp-color-contrast;
+    font-weight: 700;
+  }
+
+  .fp-deposit {
+    background: 0;
+  }
+
+  &__spinny {
+    z-index: 4;
+    position: relative;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__icon {
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &-header {
+      display: none;
+      margin: 0 1%;
+      position: absolute;
+      top: -6%;
+      left: 0;
+      pointer-events: none;
+      z-index: 6;
+    }
+  }
+
+  .fp-games-lobby-nav__lucky {
+    left: 3%;
+  }
+
+  fp-form-deposit-freespins-shop > div {
+    .fp-games-list:nth-of-type(1) {
+      .xmas__icon:first-child {
+        .xmas__icon-header {
+          display: block !important;
+        }
+      }
+      .xmas__icon:last-child {
+        .xmas__icon-header {
+          display: block !important;
+          transform: scaleX(-1);
+        }
+      }
+    }
+    .fp-games-list:nth-of-type(2) {
+      .xmas__icon:nth-child(2) {
+        .xmas__icon-header {
+          display: block !important;
+        }
+      }
+    }
+  }
+
+  fp-form-deposit-freespins-shop > div {
+    .fp-games-list:first-of-type {
+      .xmas__icon:last-child {
+        &:before {
+          content: '';
+          position: absolute;
+          background: url("/assets/images/xmas-socks.png") no-repeat center;
+          background-size: contain;
+          width: 76px;
+          height: 200px;
+          right: -60px;
+          top: -50px;
+          z-index: 10;
+        }
+      }
+    }
+    .fp-games-list:nth-of-type(2) {
+      .xmas__icon:first-child {
+        &:before {
+          content: '';
+          position: absolute;
+          background: url("/assets/images/xmas-white-sock.png") no-repeat center;
+          background-size: contain;
+          width: 76px;
+          height: 200px;
+          left: -53px;
+          top: -23px;
+          z-index: 10;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &-header {
+      margin: 0 -3%;
+      position: absolute;
+      top: -26%;
+      left: 0;
+      pointer-events: none;
+    }
+    &-footer {
+      margin: 0 -5%;
+      position: absolute;
+      bottom: -26%;
+      left: 0;
+      pointer-events: none;
+    }
+  }
+  h1, h2 {
+    color: white;
+  }
+  .fp-text--lead {
+    color: #1c6724 !important;
+  }
+  .fp-hero__action {
+    color: white;
+  }
+
+  .fp-games-featured__all {
+    color: rgb(6, 212, 91);
+    font-weight: 700;
+  }
+
+  .fp-hero {
+    &__lucky {
+      width: 380px;
+      position: absolute;
+      bottom: 140px;
+      left: 5%;
+      z-index: 2;
+      img {
+        width: 100%;
+      }
+
+      @media (max-width: 1200px) {
+        left: -10%;
+      }
+
+      @media (max-width: 991px) {
+        left: -14%;
+        width: 280px;
+        bottom: 280px;
+      }
+
+      &--mobile {
+        position: absolute;
+        width: 135px !important;
+        top: -155px;
+        left: -25px !important;
+
+        @media (min-width: 740px) {
+          width: 220px !important;
+          left: -40px !important;
+          top: -260px !important;
+        }
+      }
+    }
+    &__freespins {
+      &:before {
+        background-image: url("/assets/images/xmas-cloud.png");
+      }
+    }
+    &__pane {
+      &:before {
+        content: '';
+        position: absolute;
+        background: url("/assets/images/xmas-socks.png") no-repeat center;
+        background-size: contain;
+        width: 76px;
+        height: 200px;
+        right: -60px;
+        top: -50px;
+        z-index: 5;
+      }
+    }
+  }
+}
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+.fp-games-lobby-bg {
+  background-image: none!important;
+}
+
+.fp-games-lobby-header__clouds, .fp-games-lobby-header__rainbow {
+  display: none!important;
+}
+
+.fp-hero__clouds, .fp-hero__rainbow {
+  display: none!important;
+}
+
+.fp-hero__body {
+  background-image: none!important;
+}
+.fp-bg-animation {
+  display: none;
+}
+
+.mobile .fp-hero__pane:before{
+  display: none;
+}
+
+.mobile .xmas {
+  h3 {
+    color: $fp-color-contrast;
+  }
+  p {
+    color: white;
+  }
+}
+.mobile {
+  .xmas__snow {
+    display: block;
+    animation: none;
+    opacity: 0.5;
+  }
+  fp-snow {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+.fp-image {
+  position: relative;
+
+  &--error {
+    background: $fp-color-bg;
+  }
+
+  body.fp-dark-theme &--error {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  &__scaler {
+    width: 100%;
+  }
+
+  &__loader,
+  &__img {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+  }
+}

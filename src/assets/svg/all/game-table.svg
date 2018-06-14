@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g fill="none" fill-rule="evenodd">
+    <path class="fp-fill-a fp-stroke" fill-rule="nonzero" stroke-width="3" d="M94 132h77.7c4.5 0 8.1-4.5 8.1-10.1V79c0-5.6-3.6-10.1-8.1-10.1H95a43.9 43.9 0 0 1-1 63z"/>
+    <circle cx="64" cy="100" r="44" class="fp-fill-a fp-stroke" stroke-width="3"/>
+    <circle cx="64.5" cy="100.5" r="34.5" class="fp-stroke" stroke-width="3"/>
+    <circle cx="64" cy="100" r="24" class="fp-stroke" stroke-width="3"/>
+    <path class="fp-fill-b" fill-rule="nonzero" d="M72 95l-2-2-5.5 5-5.4-5-2.1 2 5.4 5-5.4 5 2 2 5.5-5 5.4 5 2.1-2-5.4-5z"/>
+    <path class="fp-stroke" stroke-width="3" d="M120 81h46v36h-46z"/>
+    <path class="fp-stroke" stroke-linecap="square" stroke-width="3" d="M120.5 93.5h45M120.5 104.5h45M132.5 81.5v35M143.5 81.5v35M154.5 81.5v35M64.5 66.5v9.4m0 48.7v9M98 100h-9.7m-48.5 0H31M88.5 123.8l-7-7M47.2 82.5l-6-6M41.1 123.8l6.4-6.3m34-34l7-7"/>
+  </g>
+</svg>

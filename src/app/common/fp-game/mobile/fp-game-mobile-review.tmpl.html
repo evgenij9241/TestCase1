@@ -1,0 +1,59 @@
+<div class="fp-game-mobile">
+
+  <div class="fp-game-mobile__icon">
+    <div class="fp-game-mobile__thumbnail fp-thumbnail fp-thumbnail--dialog">
+      <div ng-if="game.label" class="fp-thumbnail__label fp-thumbnail__label--{{::game.label}}">{{::game.label}}</div>
+      <div ng-if="::game.newGame" class="fp-thumbnail__new">new</div>
+      <fp-image src="::src" retina="{{::retina}}" noretina="{{::noretina}}" custom-class="fp-thumbnail__img"></fp-image>
+    </div>
+    <div class="fp-game-mobile__provider">{{'APP.PAGE.GAME.PROVIDER_PREFIX' | translate}}&nbsp;{{::game.providerName | translate}}</div>
+  </div>
+
+  <div class="fp-game-mobile__controls">
+      <div class="fp-game-mobile__controls-item" ng-if="!isLoggedIn">
+        <a class="fp-game-mobile__btn fp-btn fp-btn--primary fp-btn--block" ng-click="signup()" fp-hide-if-login>{{'APP.PAGE.SIGN_UP.HEADING' | translate}}</a>
+      </div>
+      <div class="fp-game-mobile__controls-item" ng-if="isLoggedIn">
+        <a class="fp-game-mobile__btn fp-btn fp-btn--primary fp-btn--block" href ng-click="playGame('real')">{{'APP.PAGE.GAME.BTN.REAL.POST' | translate}}</a>
+      </div>
+      <div class="fp-game-mobile__controls-item" ng-if="!game.hideDemoUrl && !isLoggedIn && !demoDisabled">
+        <a class="fp-game-mobile__btn fp-btn fp-btn--success fp-btn--block" href ng-click="playGame('demo')">{{'APP.PAGE.GAME.BTN.DEMO.POST' | translate}}</a>
+      </div>
+      <div style="text-align: center; padding: 10px;" ng-if="!isLoggedIn">
+        <a fp-on-touch="" ui-sref="login">{{'APP.FORM.LOGIN.BTN.SUBMIT' | translate}}</a>
+      </div>
+      <a ng-if="isLoggedIn" href="" ng-click="toggleFavourite($event)"
+         ng-class="{'fp-thumbnail__fav--active': game.favourite}"
+         class="fp-game-mobile__favourite">
+        <fp-icon-svg name="icon-heart" size="md" class-name="fp-thumbnail__fav-icon"></fp-icon-svg>
+        <span ng-if="!game.favourite">{{'APP.PAGE.GAME.BTN.FAVOURITE.ADD' | translate}}</span>
+        <span ng-if="game.favourite">{{'APP.PAGE.GAME.BTN.FAVOURITE.REMOVE' | translate}}</span>
+      </a>
+    </div>
+
+  <!--REVIEW-->
+  <div>
+    <h1 ng-bind-html="review.heading.header"></h1>
+    <p ng-bind-html="review.heading.copy"></p>
+  </div>
+  <div ng-repeat="block in review.copy">
+    <h1 ng-bind-html="block.header"></h1>
+    <p ng-bind-html="block.copy"></p>
+  </div>
+
+  <div>
+    <h1 ng-bind-html="review.info.heading"></h1>
+    <img ng-src="{{review.info.image}}" />
+  </div>
+
+  <div>
+    <div ng-repeat="list in review.info.list">
+      <p ng-bind-html="list"></p>
+    </div>
+
+    <div ng-repeat="tag in review.info.tags">
+      <p ng-bind-html="tag"></p>
+    </div>
+  </div>
+
+</div>

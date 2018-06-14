@@ -1,0 +1,36 @@
+<div name="thumbnail-container" class="{{::thumbnailClass}}">
+  <div class="fp-thumbnail__loader">
+    <svg name="thumbnail-placeholder" style="display: block;" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 360'>
+      <use xlink:href="#icon-icon-image-placeholder"></use>
+    </svg>
+  </div>
+  <div class="fp-thumbnail__wrapper">
+    <div ng-if="::game.label" class="fp-thumbnail__label fp-thumbnail__label--{{::game.label}}">{{::game.label}}</div>
+
+    <div ng-if="game.jackpot" class="fp-thumbnail__jackpot fp-thumbnail__jackpot--mobile">
+      <div class="fp-thumbnail__jackpot-heading">Jackpot</div>
+      <div class="fp-thumbnail__jackpot-value">{{game.jackpot.amountString}}</div>
+    </div>
+
+    <div ng-if="::game.newGame" class="fp-thumbnail__new">new</div>
+    <div class="fp-thumbnail__holder">
+      <a ng-if="!isLoggedIn && gameWithReview" href ng-click="playReview()">
+        <fp-image-new image-src="{{::game.src}}"
+                      loaded="onImageLoaded()"
+                      retina="{{::retina}}"
+                      noretina="{{::noretina}}"
+                      custom-class="fp-thumbnail__img fp-thumbnail__img--mobile">
+      </a>
+      <a ng-if="isLoggedIn || !gameWithReview" href ng-click="showGame()">
+        <fp-image-new image-src="{{::game.src}}"
+                      loaded="onImageLoaded()"
+                      retina="{{::retina}}"
+                      noretina="{{::noretina}}"
+                      custom-class="fp-thumbnail__img fp-thumbnail__img--mobile">
+      </a>
+      <div class="fp-thumbnail__title--mobile">
+        <div>{{::game.gameTitle | translate}}</div>
+      </div>
+    </div>
+  </div>
+</div>

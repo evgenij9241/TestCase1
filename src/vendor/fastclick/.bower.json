@@ -1,0 +1,22 @@
+{
+  "name": "fastclick",
+  "main": "lib/fastclick.js",
+  "ignore": [
+    "**/.*",
+    "component.json",
+    "package.json",
+    "Makefile",
+    "tests",
+    "examples"
+  ],
+  "homepage": "https://github.com/burnedikt/fastclick",
+  "_release": "e43229d42b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "ios-scroll-fix",
+    "commit": "e43229d42b8cf1bbab29e6f054a191464f871ee4"
+  },
+  "_source": "https://github.com/burnedikt/fastclick.git",
+  "_target": "ios-scroll-fix",
+  "_originalSource": "burnedikt/fastclick"
+}

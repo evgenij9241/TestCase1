@@ -1,0 +1,13 @@
+<div class="fp-thumbnail" ng-class="{'fp-thumbnail--loaded': loaded, 'fp-thumbnail--mobile': isMobile}">
+  <div class="fp-thumbnail__loader">
+    <svg ng-show="!loaded" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 360'>
+      <use xlink:href="#icon-icon-image-placeholder"></use>
+    </svg>
+  </div>
+  <div class="fp-thumbnail__wrapper">
+    <div class="fp-thumbnail__holder">
+      <fp-image src="src" loaded="loaded" retina="{{retina}}" noretina="{{noretina}}" custom-class="fp-thumbnail__img"></fp-image>
+    </div>
+  </div>
+</div>
+

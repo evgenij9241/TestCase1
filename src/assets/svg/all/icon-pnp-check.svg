@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-pnp-check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-pnp-check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="noun_1688085" fill="#662482" fill-rule="nonzero">
+            <path d="M10.4094644,19.4721391 L10.3728277,19.4400799 L10.3392437,19.4721391 L4.6635745,13.7961364 L6.68165818,11.779461 L10.3728277,15.4769539 L19.3183418,6.52786091 L21.3348991,8.54606312 L10.4094644,19.4721391 Z M12.9984736,0 C5.82221709,0 0,5.82255891 0,13.0007632 C0,20.1789678 5.82221709,26 12.9984736,26 C20.1762566,26 26,20.1789678 26,13.0007632 C26,5.82255891 20.1762566,0 12.9984736,0 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

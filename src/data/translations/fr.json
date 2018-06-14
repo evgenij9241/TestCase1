@@ -1,0 +1,1665 @@
+{
+    "APP": {
+        "TITLE": "Lucky Casino Mobile",
+        "FIELD": {
+            "EMAIL": {
+                "LABEL": "Email",
+                "PLACEHOLDER": "Email",
+                "HINT": "Email utilis\u00e9e pour vous identifier.",
+                "VALIDATION": {
+                    "REQUIRED": "S'il vous pla\u00eet entrez votre adresse e-mail"
+                }
+            },
+            "CONFIRM_EMAIL": {
+                "LABEL": "Confirmez votre e-mail",
+                "PLACEHOLDER": "Confirmez votre e-mail",
+                "HINT": "Pour des raisons de s\u00e9curit\u00e9, retaper votre bo\u00eete email. Les 2 champs doivent \u00eatre les m\u00eames.",
+                "VALIDATION": {
+                    "REQUIRED": "Confirmation de l'email est requise",
+                    "EQUALITY": "Les e-mails doivent \u00eatre \u00e9gales"
+                }
+            },
+            "PASSWORD": {
+                "LABEL": "Mot de passe",
+                "PLACEHOLDER": "Mot de passe",
+                "HINT": "Entrez un mot de passe de 6 caract\u00e8res minimum avec au moins 1 lettre majuscule et 1 chiffre.",
+                "VALIDATION": {
+                    "REQUIRED": "Le mot de passe est demand\u00e9",
+                    "EXPRESSION": "Enter a password of minimum 6 characters with at least 1 capital letter and 1 number."
+                }
+            },
+            "CONFIRM_PASSWORD": {
+                "LABEL": "Confirmez le mot de passe",
+                "PLACEHOLDER": "Confirmez le mot de passe",
+                "HINT": "Pour des raisons de s\u00e9curit\u00e9, ce mot de passe retaper. Les deux champs doivent \u00eatre les m\u00eames.",
+                "VALIDATION": {
+                    "REQUIRED": "Confirmation mot de passe est n\u00e9cessaire",
+                    "EQUALITY": "Les mots de passe doivent \u00eatre \u00e9gales"
+                }
+            },
+            "NICK_NAME": {
+                "LABEL": "Surnom",
+                "PLACEHOLDER": "Surnom",
+                "HINT": "Choisissez votre pseudo \u00e0 jouer sur le site.",
+                "VALIDATION": {
+                    "REQUIRED": "Pseudo est n\u00e9cessaire"
+                }
+            },
+            "FIRST_NAME": {
+                "LABEL": "Pr\u00e9nom",
+                "PLACEHOLDER": "Pr\u00e9nom",
+                "HINT": "Quel est votre pr\u00e9nom?",
+                "VALIDATION": {
+                    "REQUIRED": "Le pr\u00e9nom est requis"
+                }
+            },
+            "LAST_NAME": {
+                "LABEL": "Nom De Famille",
+                "PLACEHOLDER": "Nom De Famille",
+                "HINT": "Quel est ton nom de famille?",
+                "VALIDATION": {
+                    "REQUIRED": "Le nom est requis"
+                }
+            },
+            "GENDER": {
+                "LABEL": "Genre",
+                "PLACEHOLDER": "Genre",
+                "HINT": "S\u00e9lectionnez votre genre",
+                "VALIDATION": {
+                    "REQUIRED": "Genre est n\u00e9cessaire"
+                },
+                "OPTIONS": {
+                    "MALE": "M\u00e2le",
+                    "FEMALE": "Femme"
+                }
+            },
+            "BIRTH_DATE": {
+                "LABEL": "Date De Naissance",
+                "PLACEHOLDER": "Date De Naissance",
+                "HINT": "Quelle est votre date de naissance?",
+                "VALIDATION": {
+                    "REQUIRED": "Date de naissance est n\u00e9cessaire"
+                }
+            },
+            "ADDRESS": {
+                "LABEL": "Rue",
+                "PLACEHOLDER": "Rue",
+                "HINT": "Quelle est votre adresse?",
+                "VALIDATION": {
+                    "REQUIRED": "Rue est n\u00e9cessaire"
+                }
+            },
+            "HOUSE_NUMBER": {
+                "LABEL": "Num\u00e9ro de maison",
+                "PLACEHOLDER": "Num\u00e9ro de maison",
+                "HINT": "Quel est votre num\u00e9ro de la maison?",
+                "VALIDATION": {
+                    "REQUIRED": "Num\u00e9ro de la maison est n\u00e9cessaire"
+                }
+            },
+            "CITY": {
+                "LABEL": "Ville",
+                "PLACEHOLDER": "Ville",
+                "HINT": "Quelle est la ville dans laquelle vous vivez?",
+                "VALIDATION": {
+                    "REQUIRED": "La ville est requise"
+                }
+            },
+            "COUNTRY": {
+                "LABEL": "Pays",
+                "PLACEHOLDER": "Pays",
+                "HINT": "S'il vous pla\u00eet entrer dans votre pays",
+                "VALIDATION": {
+                    "REQUIRED": "Pays est n\u00e9cessaire"
+                }
+            },
+            "STATE": {
+                "LABEL": "\u00c9tat",
+                "PLACEHOLDER": "\u00c9tat",
+                "HINT": "S'il vous pla\u00eet entrez votre \u00e9tat",
+                "VALIDATION": {
+                    "REQUIRED": "\u00c9tat est n\u00e9cessaire"
+                }
+            },
+            "ZIP_CODE": {
+                "LABEL": "Postal",
+                "PLACEHOLDER": "Postal",
+                "HINT": "Quel est votre code postal ou par une glissi\u00e8re?",
+                "VALIDATION": {
+                    "REQUIRED": "Code postal est n\u00e9cessaire"
+                }
+            },
+            "REGISTRATION_CURRENCY": {
+                "LABEL": "Devise",
+                "PLACEHOLDER": "Devise",
+                "HINT": "S'il vous pla\u00eet entrez votre monnaie",
+                "VALIDATION": {
+                    "REQUIRED": "Devise est n\u00e9cessaire"
+                }
+            },
+            "PHONE_NUMBER": {
+                "LABEL": "Num\u00e9ro de t\u00e9l\u00e9phone",
+                "PLACEHOLDER": "Num\u00e9ro de t\u00e9l\u00e9phone",
+                "HINT": "S'il vous pla\u00eet entrer votre num\u00e9ro de t\u00e9l\u00e9phone",
+                "VALIDATION": {
+                    "REQUIRED": "Num\u00e9ro de t\u00e9l\u00e9phone est n\u00e9cessaire"
+                }
+            },
+            "AGE_CHECKED": {
+                "LABEL": "Je suis plus de 18 ans",
+                "VALIDATION": {
+                    "REQUIRED": "Doit \u00eatre coch\u00e9e si vous voulez continuer."
+                }
+            },
+            "POLICY_CHECKED": {
+                "LABEL": "Je accepte les Conditions <a href=\"/static/terms-and-conditions\" target=\"_blank\">Termes</a>",
+                "VALIDATION": {
+                    "REQUIRED": "Doit \u00eatre coch\u00e9e si vous voulez continuer."
+                }
+            },
+            "RECEIVE_EMAIL": {
+                "LABEL": "Je souhaite recevoir les newsletters"
+            },
+            "PROMO_CODE": {
+                "LABEL": "Code promo",
+                "PLACEHOLDER": "Code promo",
+                "HINT": "S'il vous pla\u00eet entrez votre code promo"
+            },
+            "BONUS_CODE": {
+                "LABEL": "Bonus",
+                "PLACEHOLDER": "Bonus",
+                "HINT": "S'il vous pla\u00eet entrez le code bonus si vous l'avez obtenu"
+            },
+            "REGISTRATION_CAMPAIGNS": {
+                "LABEL": "Bonus",
+                "PLACEHOLDER": "S\u00e9lectionnez un bonus"
+            },
+            "DEPOSIT_CAMPAIGNS": {
+                "LABEL": "Bonus",
+                "PLACEHOLDER": "S\u00e9lectionnez un bonus"
+            },
+            "CAMPAIGNS_ENABLED": {
+                "LABEL": "Je veux participer \u00e0 des campagnes de promotion"
+            },
+            "PAYMENT_METHOD": {
+                "LABEL": "S\u00e9lectionnez la m\u00e9thode de paiement",
+                "PLACEHOLDER": "Mode de paiement",
+                "HINT": "S'il vous pla\u00eet s\u00e9lectionner la m\u00e9thode de paiement",
+                "VALIDATION": {
+                    "REQUIRED": "M\u00e9thode de paiement est exig\u00e9"
+                }
+            },
+            "BANK_ACCOUNT": {
+                "LABEL": "Compte bancaire",
+                "PLACEHOLDER": "Compte bancaire",
+                "HINT": "Quel est votre num\u00e9ro de compte bancaire?",
+                "VALIDATION": {
+                    "REQUIRED": "Compte bancaire est n\u00e9cessaire"
+                }
+            },
+            "BANK_BIC": {
+                "LABEL": "BIC ou SWIFT",
+                "PLACEHOLDER": "BIC ou SWIFT",
+                "HINT": "S'il vous pla\u00eet entrer soit BIC ou SWIFT",
+                "VALIDATION": {
+                    "REQUIRED": "BIC ou SWIFT est n\u00e9cessaire"
+                }
+            },
+            "BANK_CLEARING_CODE": {
+                "LABEL": "Code Clearing",
+                "PLACEHOLDER": "Code Clearing",
+                "HINT": "S'il vous pla\u00eet entrer compensation code ici",
+                "VALIDATION": {
+                    "REQUIRED": "Code banque de compensation est n\u00e9cessaire"
+                }
+            },
+            "BANK_NAME": {
+                "LABEL": "Nom de banque",
+                "PLACEHOLDER": "Nom de banque",
+                "HINT": "Nom de la banque",
+                "VALIDATION": {
+                    "REQUIRED": "Nom de la banque est n\u00e9cessaire"
+                }
+            },
+            "BANK_ACCOUNT_OWNER_NAME": {
+                "LABEL": "Le nom du propri\u00e9taire du compte bancaire",
+                "PLACEHOLDER": "Le nom du propri\u00e9taire du compte bancaire",
+                "HINT": "Le nom du propri\u00e9taire du compte bancaire",
+                "VALIDATION": {
+                    "REQUIRED": "Le nom du propri\u00e9taire du compte bancaire est n\u00e9cessaire"
+                }
+            },
+            "BANK_LOCATION": {
+                "LABEL": "Emplacement de la Banque",
+                "PLACEHOLDER": "Emplacement de la Banque",
+                "HINT": "Emplacement de la Banque",
+                "VALIDATION": {
+                    "REQUIRED": "Emplacement de la Banque est requise"
+                }
+            },
+            "IBAN_ACCOUNT": {
+                "LABEL": "Compte bancaire (IBAN)",
+                "PLACEHOLDER": "Compte bancaire (IBAN)",
+                "HINT": "Par exemple: GB29NWBK60161331926819.",
+                "VALIDATION": {
+                    "REQUIRED": "Compte bancaire (IBAN) est n\u00e9cessaire"
+                }
+            },
+            "IBAN_BIC": {
+                "LABEL": "BIC ou SWIFT",
+                "PLACEHOLDER": "BIC ou SWIFT",
+                "HINT": "S'il vous pla\u00eet entrer soit BIC ou SWIFT.",
+                "VALIDATION": {
+                    "REQUIRED": "BIC ou SWIFT est n\u00e9cessaire"
+                }
+            },
+            "IBAN_BANK_NAME": {
+                "LABEL": "Nom de banque",
+                "PLACEHOLDER": "Nom de banque",
+                "HINT": "Nom de la banque",
+                "VALIDATION": {
+                    "REQUIRED": "Bank nom de code est n\u00e9cessaire"
+                }
+            },
+            "IBAN_ACCOUNT_OWNER_NAME": {
+                "LABEL": "Le nom du propri\u00e9taire du compte bancaire",
+                "PLACEHOLDER": "Le nom du propri\u00e9taire du compte bancaire",
+                "HINT": "Le nom du propri\u00e9taire du compte bancaire",
+                "VALIDATION": {
+                    "REQUIRED": "Le nom du propri\u00e9taire du compte bancaire est n\u00e9cessaire"
+                }
+            },
+            "MONEYBOOKERS_EMAIL": {
+                "LABEL": "Email Skrill",
+                "PLACEHOLDER": "Email Skrill",
+                "HINT": "Quel est votre email Skrill?",
+                "VALIDATION": {
+                    "REQUIRED": "Skrill email est requise"
+                }
+            },
+            "NETELLER_ACCOUNT_ID": {
+                "LABEL": "Neteller E-mail ou num\u00e9ro de compte",
+                "PLACEHOLDER": "Neteller E-mail ou num\u00e9ro de compte",
+                "HINT": "Quel est votre Neteller E-mail ou num\u00e9ro de compte?",
+                "VALIDATION": {
+                    "REQUIRED": "Neteller ID de compte est n\u00e9cessaire"
+                }
+            },
+            "SECURE_ID": {
+                "LABEL": "Identification s\u00e9curis\u00e9e",
+                "PLACEHOLDER": "Identification s\u00e9curis\u00e9e",
+                "HINT": "Quelle est votre identification s\u00e9curis\u00e9e?",
+                "VALIDATION": {
+                    "REQUIRED": "Identification s\u00e9curis\u00e9e est n\u00e9cessaire"
+                }
+            },
+            "CASH_BALANCE": {
+                "LABEL": "Le solde de tr\u00e9sorerie",
+                "PLACEHOLDER": "",
+                "HINT": "Le montant de retrait disponibles"
+            },
+            "CUSTOMER_CC_TYPE": {
+                "LABEL": "Type de cr\u00e9dit / carte de d\u00e9bit",
+                "PLACEHOLDER": "Type de cr\u00e9dit / carte de d\u00e9bit",
+                "HINT": "Quelle est votre Type de cr\u00e9dit / d\u00e9bit?",
+                "VALIDATION": {
+                    "REQUIRED": "Type de cr\u00e9dit / carte de d\u00e9bit est n\u00e9cessaire"
+                }
+            },
+            "CUSTOMER_CC_NUMBER": {
+                "LABEL": "Nombre cr\u00e9dit / carte de d\u00e9bit",
+                "PLACEHOLDER": "Nombre cr\u00e9dit / carte de d\u00e9bit",
+                "HINT": "Quelle est votre cr\u00e9dit Nombre / carte de d\u00e9bit?",
+                "VALIDATION": {
+                    "REQUIRED": "Nombre cr\u00e9dit / carte de d\u00e9bit est n\u00e9cessaire"
+                }
+            },
+            "CUSTOMER_CC_EXPMO": {
+                "LABEL": "Mois D'Expiration",
+                "PLACEHOLDER": "Mois D'Expiration",
+                "HINT": "Mois D'Expiration",
+                "VALIDATION": {
+                    "REQUIRED": "Mois d'expiration est n\u00e9cessaire"
+                }
+            },
+            "CUSTOMER_CC_EXPYR": {
+                "LABEL": "Ann\u00e9e d'expiration",
+                "PLACEHOLDER": "Ann\u00e9e d'expiration",
+                "HINT": "Ann\u00e9e d'expiration",
+                "VALIDATION": {
+                    "REQUIRED": "Ann\u00e9e d'expiration est n\u00e9cessaire"
+                }
+            },
+            "CUSTOMER_CC_CVC": {
+                "LABEL": "CVC",
+                "PLACEHOLDER": "CVC",
+                "HINT": "CVC",
+                "VALIDATION": {
+                    "REQUIRED": "CVC est n\u00e9cessaire"
+                }
+            },
+            "CARD_TYPE": {
+                "LABEL": "Type de carte",
+                "PLACEHOLDER": "Type de carte",
+                "HINT": "Quel est votre type de carte?",
+                "VALIDATION": {
+                    "REQUIRED": "Type de carte est n\u00e9cessaire"
+                }
+            },
+            "CARD_NUMBER": {
+                "LABEL": "Num\u00e9ro de la carte",
+                "PLACEHOLDER": "Num\u00e9ro de la carte",
+                "HINT": "Quel est votre num\u00e9ro de carte?",
+                "VALIDATION": {
+                    "REQUIRED": "Num\u00e9ro de la carte est n\u00e9cessaire"
+                }
+            },
+            "CARDNUMBER": {
+                "LABEL": "Num\u00e9ro de la carte est n\u00e9cessaire",
+                "PLACEHOLDER": "Num\u00e9ro de la carte",
+                "HINT": "Num\u00e9ro de la carte",
+                "VALIDATION": {
+                    "REQUIRED": "Quel est votre num\u00e9ro de carte?"
+                }
+            },
+            "EXPIRY_MONTH": {
+                "LABEL": "Num\u00e9ro de la carte est n\u00e9cessaire",
+                "PLACEHOLDER": "Mois D'Expiration",
+                "HINT": "Mois D'Expiration",
+                "VALIDATION": {
+                    "REQUIRED": "Mois D'Expiration"
+                }
+            },
+            "CARDEXPIRYDATE": {
+                "LABEL": "Mois D'Expiration",
+                "PLACEHOLDER": "Mois D'Expiration",
+                "HINT": "Mois D'Expiration",
+                "VALIDATION": {
+                    "REQUIRED": "Mois D'Expiration"
+                }
+            },
+            "EXPIRY_YEAR": {
+                "LABEL": "Mois D'Expiration",
+                "PLACEHOLDER": "Ann\u00e9e d'expiration",
+                "HINT": "Ann\u00e9e d'expiration",
+                "VALIDATION": {
+                    "REQUIRED": "Ann\u00e9e d'expiration"
+                }
+            },
+            "CARDEXPIRYYEAR": {
+                "LABEL": "Ann\u00e9e d'expiration est n\u00e9cessaire",
+                "PLACEHOLDER": "Ann\u00e9e d'expiration",
+                "HINT": "Ann\u00e9e d'expiration",
+                "VALIDATION": {
+                    "REQUIRED": "Ann\u00e9e d'expiration est n\u00e9cessaire"
+                }
+            },
+            "CARD_HOLDER": {
+                "LABEL": "Titulaire de la carte",
+                "PLACEHOLDER": "Titulaire de la carte",
+                "HINT": "Nom du titulaire",
+                "VALIDATION": {
+                    "REQUIRED": "Titulaire de la carte est n\u00e9cessaire"
+                }
+            },
+            "CARD_CVV": {
+                "LABEL": "CVV",
+                "PLACEHOLDER": "CVV",
+                "HINT": "CVV",
+                "VALIDATION": {
+                    "REQUIRED": "CVV est n\u00e9cessaire"
+                }
+            },
+            "CARDCVC": {
+                "LABEL": "CVC",
+                "PLACEHOLDER": "CVC",
+                "HINT": "CVC",
+                "VALIDATION": {
+                    "REQUIRED": "CVC est n\u00e9cessaire"
+                }
+            },
+            "BGC_PLAYER_TOKEN": {
+                "LABEL": "Votre BGC jeton",
+                "PLACEHOLDER": "Votre BGC jeton",
+                "HINT": "Votre BGC jeton",
+                "VALIDATION": {
+                    "REQUIRED": "BGC jeton est n\u00e9cessaire"
+                }
+            },
+            "SSN": {
+                "LABEL": "SSN",
+                "PLACEHOLDER": "SSN",
+                "HINT": "SSN",
+                "VALIDATION": {
+                    "REQUIRED": "SSN est requis"
+                }
+            },
+            "PASSPORT_NUMBER": {
+                "LABEL": "Num\u00e9ro De Passeport",
+                "PLACEHOLDER": "Num\u00e9ro De Passeport",
+                "HINT": "Quel est votre num\u00e9ro de passeport national?",
+                "VALIDATION": {
+                    "REQUIRED": "Num\u00e9ro de passeport est n\u00e9cessaire"
+                }
+            },
+            "ECOPAYZ_ACCOUNT_ID": {
+                "LABEL": "EcoPayz compte ID",
+                "PLACEHOLDER": "EcoPayz compte ID",
+                "HINT": "Quelle est votre compte EcoPayz ID?",
+                "VALIDATION": {
+                    "REQUIRED": "EcoPayz ID de compte est n\u00e9cessaire"
+                }
+            },
+            "ACCOUNTNUMBER": {
+                "LABEL": "Num\u00e9ro de compte",
+                "PLACEHOLDER": "Num\u00e9ro de compte",
+                "HINT": "Quel est votre num\u00e9ro de compte?",
+                "VALIDATION": {
+                    "REQUIRED": "Num\u00e9ro de compte est n\u00e9cessaire"
+                }
+            },
+            "BANKCODE": {
+                "LABEL": "Code bancaire",
+                "PLACEHOLDER": "Code bancaire",
+                "HINT": "Quel est votre code bancaire?",
+                "VALIDATION": {
+                    "REQUIRED": "Code banque est n\u00e9cessaire"
+                }
+            },
+            "DOCUMENT_TYPE": {
+                "LABEL": "Document Type",
+                "PLACEHOLDER": "Document Type",
+                "HINT": "Document Type",
+                "VALIDATION": {
+                    "REQUIRED": "Document Type is required"
+                }
+            }
+        },
+        "FIELD_TYPE": {
+            "DATEPICKER": {
+                "BTN": {
+                    "CURRENT": "Aujourd'hui",
+                    "CLEAR": "Clair",
+                    "CLOSE": "Fermer"
+                }
+            },
+            "DATESELECTOR": {
+                "DAY": {
+                    "PLACEHOLDER": "Jour"
+                },
+                "WEEK": {
+                    "PLACEHOLDER": "Week"
+                },
+                "MONTH": {
+                    "PLACEHOLDER": "Mois"
+                },
+                "YEAR": {
+                    "PLACEHOLDER": "Ann\u00e9e"
+                }
+            },
+            "CAMPAIGNS": {
+                "OPTIONS": {
+                    "PROMO_CAMPAIGN": "Utilisez un code promo",
+                    "NO_BONUS": "Aucun bonus"
+                },
+                "HINT": {
+                    "DEFAULT": "Toutes les campagnes promotionnelles disponibles.",
+                    "CASH": "Participer \u00e0 cette campagne vous donne {{currency}} monnaie {{amount}} tr\u00e9sorerie.",
+                    "PROMO_CASH": "Participer \u00e0 cette campagne vous donne {{currency}} monnaie {{amount}} montant cash de promo.",
+                    "PERCENTAGE": "Participer \u00e0 cette campagne ajoute \u00e0 encaisser {{percentage}} % de votre d\u00e9p\u00f4t.",
+                    "PROMO_PERCENTAGE": "Participer \u00e0 cette campagne ajoute promo cash {{percentage}} % de votre d\u00e9p\u00f4t.",
+                    "BS_FREE_SPINS": "Participer \u00e0 cette campagne vous donne {{amount}} Betsoft tours gratuits.",
+                    "AD_FREE_SPINS": "Participer \u00e0 cette campagne vous donne {{amountt}} AirDice tours gratuits.",
+                    "WAGERING": "Parier facteur est {{turnover}}."
+                },
+                "PROMO_CODE": {
+                    "PLACEHOLDER": "Code promo"
+                }
+            }
+        },
+        "FORM": {
+            "LOGIN": {
+                "FIELD": {
+                    "EMAIL": {
+                        "LABEL": "Email",
+                        "PLACEHOLDER": "Email",
+                        "HINT": "S'il vous pla\u00eet entrer votre e-mail",
+                        "VALIDATION": {
+                            "REQUIRED": "Email is required"
+                        }
+                    },
+                    "PASSWORD": {
+                        "LABEL": "Mot de passe",
+                        "PLACEHOLDER": "Mot de passe",
+                        "HINT": "S'il vous pla\u00eet, entrez votre mot de passe",
+                        "VALIDATION": {
+                            "REQUIRED": "Password is required"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "Acces Membres"
+                }
+            },
+            "TERMS_ACCEPTANCE": {
+                "MESSAGE": "Les Conditions Casino g\u00e9n\u00e9rales de vente (CGV) ont \u00e9t\u00e9 mises \u00e0 jour et sont maintenant disponibles pour vous de voir sur le site Web </p><p> S'il vous pla\u00eet cliquer sur <a ui-sref=\"static({pageName:'terms', returnBack: true})\">ici</a> pour lire la nouvelle GT & C </p> <p> En cliquant. \"Soumettre\" vous allez accepter la nouvelle version de GT & C.",
+                "BTN": {
+                    "CANCEL": "D\u00e9clin",
+                    "SUBMIT": "Accepter"
+                }
+            },
+            "REGISTRATION": {
+                "BTN": {
+                    "SUBMIT": "Soumettre",
+                    "SUBMIT_STEP1": "Next Step",
+                    "SUBMIT_STEP2": "Start Your Quest!"
+                },
+                "SUCCESS": "<p class='fp-text--lead'>Registration was success.</p><p>Activation message has been send to your registered email. Please click the link in the email to activate your account.</p><p>If you do not receive the activation email, please check your <b>JUNK</b> or <b>SPAM</b> folder or contact our support.</p>"
+            },
+            "ACCOUNT_ACTIVATION": {
+                "FIELD": {
+                    "ACTIVATION_CODE": {
+                        "LABEL": "Code",
+                        "PLACEHOLDER": "Code d'activation",
+                        "HINT": "S'il vous pla\u00eet entrez le code d'activation",
+                        "VALIDATION": {
+                            "REQUIRED": "Le code d'activation est n\u00e9cessaire"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "activer le compte"
+                },
+                "SUCCESS_HEADING": "Welcome! Your email address has been verified, recruit!",
+                "SUCCESS_HEADING_OLD": "Your email address has been verified, recruit!",
+                "SUCCESS": "<p class='fp-text--lead'>Your email address has been verified, recruit!</p><p>General Signup and Lucky shake hands on the agreement to let you in to Lucky\u2019s Casino. Welcome aboard! General Signup now leaves you in Lucky\u2019s safe hands to meet new recruits. Your treasure hunt begins now! Don\u2019t forget to claim your welcome bonus.</p>"
+            },
+            "PHONE_ACTIVATION": {
+                "FIELD": {
+                    "ACTIVATION_CODE": {
+                        "LABEL": "Phone Code",
+                        "PLACEHOLDER": "Activation code",
+                        "HINT": "Please enter the activation code",
+                        "VALIDATION": {
+                            "REQUIRED": "Activation code is required"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "Claim your bonus"
+                }
+            },
+            "FORGOT_PASSWORD": {
+                "FIELD": {
+                    "EMAIL": {
+                        "LABEL": "Email",
+                        "PLACEHOLDER": "indirizzo e-mail",
+                        "HINT": "Inserire l'indirizzo email che hai registrato con ...",
+                        "VALIDATION": {
+                            "REQUIRED": "Email address is required."
+                        }
+                    },
+                    "BIRTH_DATE": {
+                        "LABEL": "Data Di Nascita",
+                        "PLACEHOLDER": "Data Di Nascita",
+                        "HINT": "Inserisci la tua data di nascita"
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "presentare"
+                },
+                "SUCCESS": "<h4> Merci! </h4> <p> Un message avec un lien pour changer votre mot de passe a \u00e9t\u00e9 envoy\u00e9 \u00e0 votre adresse e-mail. </p>"
+            },
+            "RESET_PASSWORD": {
+                "FIELD": {
+                    "PASSWORD": {
+                        "LABEL": "Nouveau mot de passe",
+                        "PLACEHOLDER": "Nouveau mot de passe",
+                        "HINT": "Quelle est votre nouveau mot de passe?",
+                        "VALIDATION": {
+                            "REQUIRED": "Password is required"
+                        }
+                    },
+                    "CONFIRM_PASSWORD": {
+                        "LABEL": "Confirmez le mot de passe",
+                        "PLACEHOLDER": "Confirmez le mot de passe",
+                        "HINT": "S'il vous pla\u00eet entrer de nouveau votre nouveau mot de passe",
+                        "VALIDATION": {
+                            "REQUIRED": "Password confirmation is required",
+                            "EQUALITY": "Passwords should be equal"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "Sauvegarder"
+                },
+                "SUCCESS": "<h4>Merci!</h4> <p>Votre mot de passe a \u00e9t\u00e9 mis \u00e0 jour avec succ\u00e8s!</p>"
+            },
+            "CHANGE_PASSWORD": {
+                "FIELD": {
+                    "PASSWORD_CURRENT": {
+                        "LABEL": "Mot de passe actuel",
+                        "PLACEHOLDER": "Mot de passe actuel",
+                        "HINT": "Quelle est votre ancien mot de passe?",
+                        "VALIDATION": {
+                            "REQUIRED": "Mot de passe actuel est requis"
+                        }
+                    },
+                    "PASSWORD": {
+                        "LABEL": "Nouveau mot de passe",
+                        "PLACEHOLDER": "Nouveau mot de passe",
+                        "HINT": "Quelle est votre nouveau mot de passe?"
+                    },
+                    "CONFIRM_PASSWORD": {
+                        "LABEL": "Confirmez le mot de passe",
+                        "PLACEHOLDER": "Confirmez le mot de passe",
+                        "HINT": "Pour des raisons de s\u00e9curit\u00e9, ce mot de passe retaper. Les deux champs doivent \u00eatre identiques"
+                    },
+                    "BIRTH_DATE": {
+                        "LABEL": "Date De Naissance",
+                        "PLACEHOLDER": "Date De Naissance",
+                        "HINT": "S'il vous pla\u00eet fournir votre date de naissance pour des raisons de s\u00e9curit\u00e9."
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "Sauvegarder",
+                    "CONTINUE": "Continue",
+                    "CANCEL": "Cancel"
+                },
+                "SUCCESS": "Votre mot de passe a \u00e9t\u00e9 chang\u00e9 avec succ\u00e8s."
+            },
+            "CHECK_PASSWORD": {
+                "MESSAGE": "Pour des raisons de s\u00e9curit\u00e9, tapez votre mot de passe:",
+                "FIELD": {
+                    "PASSWORD": {
+                        "LABEL": "Mot de passe",
+                        "PLACEHOLDER": "Mot de passe",
+                        "HINT": "S'il vous pla\u00eet, entrez votre mot de passe",
+                        "VALIDATION": {
+                            "REQUIRED": "Password is required"
+                        }
+                    }
+                },
+                "BTN": {
+                    "CANCEL": "Annuler",
+                    "SUBMIT": "Continuer"
+                }
+            },
+            "CONTACT_US": {
+                "FIELD": {
+                    "FIRST_NAME": {
+                        "LABEL": "Pr\u00e9nom",
+                        "PLACEHOLDER": "Pr\u00e9nom",
+                        "HINT": "Quel est votre pr\u00e9nom?"
+                    },
+                    "LAST_NAME": {
+                        "LABEL": "Nom De Famille",
+                        "PLACEHOLDER": "Nom De Famille",
+                        "HINT": "Quel est ton nom de famille?"
+                    },
+                    "EMAIL": {
+                        "LABEL": "Email",
+                        "PLACEHOLDER": "Email",
+                        "HINT": "S'il vous pla\u00eet entrer votre e-mail"
+                    },
+                    "SUBJECT": {
+                        "LABEL": "Sujet",
+                        "PLACEHOLDER": "Sujet",
+                        "HINT": "Indiquez l'objet",
+                        "VALIDATION": {
+                            "REQUIRED": "Objet est n\u00e9cessaire"
+                        }
+                    },
+                    "SUBJECT_PREDEFINED": {
+                        "LABEL": "Sujet",
+                        "PLACEHOLDER": "Sujet",
+                        "HINT": "Choisissez votre sujet ...",
+                        "VALIDATION": {
+                            "REQUIRED": "Objet est n\u00e9cessaire"
+                        },
+                        "OPTIONS": {
+                            "1": "Mot De Passe Perdu",
+                            "2": "Inscription",
+                            "3": "D\u00e9p\u00f4t / Retraits",
+                            "4": "Promotions",
+                            "5": "Autre"
+                        }
+                    },
+                    "MESSAGE": {
+                        "LABEL": "Message",
+                        "PLACEHOLDER": "Message",
+                        "HINT": "S'il vous pla\u00eet entrez votre message",
+                        "VALIDATION": {
+                            "REQUIRED": "Message est requis"
+                        }
+                    },
+                    "COPY": {
+                        "LABEL": "Envoyez-moi une copie"
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "envoyer le message"
+                },
+                "SUCCESS": "<h4> Merci pour le message! </h4> <p> Nous reviendrons vers vous d\u00e8s que possible. </p>"
+            },
+            "MY_DETAILS": {
+                "BTN": {
+                    "SUBMIT": "Sauvegarder"
+                },
+                "SUCCESS": "Votre profil d\u00e9tails ont \u00e9t\u00e9 mis \u00e0 jour avec succ\u00e8s."
+            },
+            "MY_PAYMENT_DETAILS": {
+                "BTN": {
+                    "SUBMIT": "Sauvegarder"
+                },
+                "SUCCESS": "Vos coordonn\u00e9es bancaires ont \u00e9t\u00e9 mis \u00e0 jour avec succ\u00e8s."
+            },
+            "DEPOSIT": {
+                "PENDING_WITHDRAWALS": "Vous avez des retraits en attente.",
+                "FIELD": {
+                    "PAYMENT_METHOD": {
+                        "LABEL": "M\u00e9thode de d\u00e9p\u00f4t"
+                    },
+                    "AMOUNT": {
+                        "LABEL": "Quantit\u00e9",
+                        "PLACEHOLDER": "Quantit\u00e9",
+                        "HINT": "Montant de votre d\u00e9p\u00f4t"
+                    },
+                    "AMOUNT_RANGE": {
+                        "LABEL": "Gamme de Montant",
+                        "PLACEHOLDER": "Gamme de Montant",
+                        "HINT": "Gamme de Montant",
+                        "BONUS": "Bonus!"
+                    },
+                    "STEP": {
+                        "1": "Select payment method",
+                        "2": "Select an amount",
+                        "3": "Select your bonus"
+                    },
+                    "BONUS_OPTIONS": {
+                        "NO_BONUS": {
+                            "NO_THANKS": "No thanks",
+                            "PROCEED": "Proceed without free spins"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "D\u00e9p\u00f4t",
+                    "SKIP": "Skip"
+                },
+                "OFFLINE_BANK_DETAILS": "Nom du compte: XXX XXX <br> actuel Num\u00e9ro de compte: XXXXXXXXXXXX <br> code IBAN: Banque Adresse XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: Code Swift de XXX XXX XXX: XXXX XXXX <br> Num\u00e9ro de r\u00e9f\u00e9rence: {{reference}}"
+            },
+            "DEPOSIT_PREFILLING": {
+                "MESSAGE": "<strong> Avant de faire un paiement s'il vous pla\u00eet remplir les informations ci-dessous. </strong> Plus tard, vous pouvez modifier ces informations de la page Mon compte.",
+                "BTN": {
+                    "SUBMIT": "Sauvegarder"
+                }
+            },
+            "DEPOSIT_CONFIRMATION": {
+                "AMOUNT": "quantit\u00e9",
+                "FEE": "frais",
+                "BONUS": "Bonus Amount",
+                "FEE_STRATEGY": {
+                    "INCLUDED": {
+                        "TOTAL": "Total \u00e0 le compte du joueur",
+                        "NOTICE": "Note: La taxe de d\u00e9p\u00f4t est <strong> {{currency}} monnaie {{amount}} </strong> par transaction, qui sera automatiquement d\u00e9duit du <strong> montant du d\u00e9p\u00f4t </strong>."
+                    },
+                    "ADDED": {
+                        "TOTAL": "Total de la balance de paiement",
+                        "NOTICE": "Note: La taxe de d\u00e9p\u00f4t est <strong>{{currency}} monnaie {{amount}}</strong> par transaction, qui sera automatiquement d\u00e9duit du <strong>balance des paiements</strong>."
+                    }
+                },
+                "BTN": {
+                    "CANCEL": "Retour",
+                    "SUBMIT": "Confirmez d\u00e9p\u00f4t"
+                }
+            },
+            "DEPOSIT_STATUS": {
+                "BTN": {
+                    "SUBMIT": "continuer",
+                    "SUCCESS": "Let's Play",
+                    "PENDING": "Let's Play",
+                    "CANCELLED": "Try Again",
+                    "FAILED": "Try Again",
+                    "REJECTED": "Try Again"
+                },
+                "SUCCESS": "<h2>Thank You</h2>{{amount}} was added to your balance",
+                "PENDING": "Le d\u00e9p\u00f4t est en instance, s'il vous pla\u00eet patienter.",
+                "CANCELLED": "<h2>Oh, Sorry</h2>Deposit has been canceled.",
+                "FAILED": "<h2>Oh, Sorry</h2>We could not complete your purchase",
+                "REJECTED": "<h2>Oh, Sorry</h2>Deposit has been rejected."
+            },
+            "QUICK_DEPOSIT": {
+                "FIELD": {
+                    "REFERENCE": {
+                        "LABEL": "Choose Credit Card",
+                        "VALIDATION": {
+                            "REQUIRED": "Email is required"
+                        }
+                    },
+                    "AMOUNT": {
+                        "LABEL": "Amount",
+                        "PLACEHOLDER": "amount",
+                        "HINT": "Please enter amount",
+                        "VALIDATION": {
+                            "REQUIRED": "Amount is required"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "Deposit"
+                }
+            },
+            "WITHDRAWAL": {
+                "NOTICE": {
+                    "PROCESSING": "Traitement de retrait prend un \u00e0 deux jours de la banque.",
+                    "BONUS": "Seulement solde de tr\u00e9sorerie peut \u00eatre transf\u00e9r\u00e9, solde de bonus ne peut pas \u00eatre transf\u00e9r\u00e9.",
+                    "PROMO": "En cas de retrait, l'\u00e9quilibre promo <strong> {{currency}} monnaie {{amount}} </strong> sera remis \u00e0 <strong> {{currency}} monnaie 0 </strong>."
+                },
+                "FIELD": {
+                    "PAYMENT_METHOD": {
+                        "LABEL": "m\u00e9thode de retrait"
+                    },
+                    "AMOUNT": {
+                        "LABEL": "quantit\u00e9",
+                        "PLACEHOLDER": "quantit\u00e9",
+                        "HINT": "Montant de votre retrait",
+                        "DESCRIPTION": "from {{currency}}{{min}} to {{currency}}{{max}}"
+                    },
+                    "AMOUNT_RANGE": {
+                        "LABEL": "Gamme de Montant",
+                        "PLACEHOLDER": "Gamme de Montant",
+                        "HINT": "Gamme de Montant"
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "retirer"
+                }
+            },
+            "WITHDRAWAL_PREFILLING": {
+                "MESSAGE": "<strong> Avant de faire un retrait s'il vous pla\u00eet remplir les informations ci-dessous. </strong> Plus tard, vous pouvez modifier ces informations de la page Mon compte.",
+                "BTN": {
+                    "SUBMIT": "Sauvegarder"
+                },
+                "HEADING": "Fill in your details"
+            },
+            "WITHDRAWAL_CONFIRMATION": {
+                "AMOUNT": "quantit\u00e9",
+                "FEE": "frais",
+                "FEE_STRATEGY": {
+                    "INCLUDED": {
+                        "TOTAL": "Total sur le compte bancaire",
+                        "NOTICE": "Remarque: Les frais de virement bancaire est <strong> {{currency}} {{amount}} </strong> par transaction, qui sera automatiquement d\u00e9duit du <strong> montant de retrait </strong>."
+                    },
+                    "ADDED": {
+                        "TOTAL": "Total du solde de joueur",
+                        "NOTICE": "Note: Les frais de transfert bancaire est <strong> {{currency}} {{amount}} </strong> par transaction, qui sera automatiquement d\u00e9duit du <strong> lecteur \u00e9quilibre </strong>."
+                    }
+                },
+                "BTN": {
+                    "CANCEL": "Retour",
+                    "SUBMIT": "Confirmez retrait"
+                }
+            },
+            "WITHDRAWAL_STATUS": {
+                "SUCCESS": "L'argent a \u00e9t\u00e9 retir\u00e9 avec succ\u00e8s \u00e0 partir de votre compte de jeu. Traitement du retrait prendra un \u00e0 deux jours de la banque."
+            },
+            "UPLOAD": {
+                "FIELD": {
+                    "FILE": {
+                        "LABEL": "Select the document you want to upload",
+                        "PLACEHOLDER": "(File format can be PDF, JPEG or PNG. Max file size is 2 Mb)",
+                        "HINT": "Please select file",
+                        "VALIDATION": {
+                            "REQUIRED": "File is required"
+                        }
+                    },
+                    "NAME": {
+                        "LABEL": "Document name",
+                        "PLACEHOLDER": "Document name",
+                        "HINT": "Please enter document name",
+                        "VALIDATION": {
+                            "REQUIRED": "Document name is required",
+                            "EXPRESSION": "Name must be letters or digits and 3-10 symbols long"
+                        }
+                    },
+                    "TYPE": {
+                        "LABEL": "Specify the type of document",
+                        "PLACEHOLDER": "Specify the type of document",
+                        "HINT": "Please select document type",
+                        "VALIDATION": {
+                            "REQUIRED": "Document type is required"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "Upload"
+                }
+            }
+        },
+        "PAGE": {
+            "LOBBY": {
+                "HEADING": "{{totalGames}} Casino Games",
+                "FAVOURITES": "My favorite games",
+                "POPULAR": "Popular Games"
+            },
+            "404": {
+                "TITLE": "pas trouv\u00e9",
+                "HEADER": "pas trouv\u00e9",
+                "TEXT": "D\u00e9sol\u00e9, mais la page que vous essayiez de voir ne pas exister."
+            },
+            "HOME": {
+                "LICENSE": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo facilisis varius. Nulla odio odio, interdum sit amet pellentesque commodo, lacinia a lectus. Quisque porttitor enim vel ligula egestas aliquet. Sed varius euismod neque, id aliquam est porta eget. Sed sed quam neque, quis convallis sapien.</p>",
+                "COPYRIGHT": "Copyright \u00a9 2015. Tous droits r\u00e9serv\u00e9s.",
+                "REGISTER_NOW": "Inscris-toi maintenant \u00e0 jouer",
+                "JOIN_NOW": "Inscris-toi maintenant \u00e0 jouer",
+                "LINK_LOBBY": "All {{totalGames}} games",
+                "GAMES_LIST": {
+                    "POPULAR": "Popular Games",
+                    "FAVORITE": "My favorite games",
+                    "SIGN_UP": "Sign Up Now",
+                    "ALL_GALES_LINK": "See all games",
+                    "NOTE": "You\u2019ll get <strong>20 Free Spins</strong> on <br/> Star Burst"
+                }
+            },
+            "HEADER": {
+                "CASINO": "Casino",
+                "SIGN_UP": "Sign Up",
+                "LOGIN": "Login"
+            },
+            "HERO": {
+                "ACTION": {
+                    "HEADING": "The Casino Quest",
+                    "COPY": "<span class=\"fp-text--lead\">Meet good Lucky,</span><br/>Lucky is working hard to let you see the rainbow and reap the treasures carried in the end of it.",
+                    "LINK": "Start your Quest"
+                },
+                "FREESPINS": {
+                    "20": "<strong class=\"fp-hero__freespins-strong\">20 free spins</strong>on Starburst!",
+                    "450": "Want 450 free spins?"
+                },
+                "PANE": {
+                    "EXPLORE": {
+                        "HEADING": "Explore the map",
+                        "COPY": "Get free spins as you progress on the quest map"
+                    },
+                    "COLLECT": {
+                        "HEADING": "Collect the gold",
+                        "COPY": "Collect gold as you play. Exchange gold with free spins."
+                    }
+                }
+            },
+            "CASINO": {
+                "TITLE": "Casino",
+                "PROMO": "You\u2019ll get <strong>20 Free Spins</strong> on Star Burst <br><a ui-sref=\"signup\">Want 450 free spins?</a>"
+            },
+            "BETTING": {
+                "TITLE": "pari"
+            },
+            "LOGIN": {
+                "TITLE": "S'identifier",
+                "HEADER": "S'identifier",
+                "FOOTER": "Forgot your password?"
+            },
+            "SIGN_UP": {
+                "TITLE": "Sign Up",
+                "HEADER": "Sign Up",
+                "HEADING": "Sign Up",
+                "SUB_HEADING": "And Start Your Quest",
+                "PROMO": "<strong>20 free spins</strong>on Starburst!",
+                "FOOTER": "You almost done",
+                "DONE": "Almost Done",
+                "COMPLETE": "Complete Your Profile"
+            },
+            "TERMS_ACCEPTANCE": {
+                "TITLE": "Accepter nouvelles Conditions G\u00e9n\u00e9rales d'Utilisation",
+                "HEADER": "Accepter nouvelles Conditions G\u00e9n\u00e9rales d'Utilisation"
+            },
+            "REGISTRATION": {
+                "TITLE": "inscription",
+                "HEADER": "Cr\u00e9er un nouveau compte",
+                "REGISTER_AGREE": "By choosing register I certify I\u2019m <strong>18+</strong> and agree to the <a ui-sref=\"static({pageName:'terms',returnBack:true})\"><strong>Terms & Conditions</strong></a>"
+            },
+            "ACCOUNT_ACTIVATION": {
+                "TITLE": "Activation du compte",
+                "HEADER": "Activation du compte"
+            },
+            "WELCOME": {
+                "TITLE": "Welcome!",
+                "HEADER": "Welcome!",
+                "CONFIRM": "Confirm your phone number and claim your bonus!",
+                "FILL_DIGITS": "Please fill in the <strong>4 digits</strong> we have sent to your cell phone. <a href=''>Didn\u2019t receive the message?</a>"
+            },
+            "FORGOT_PASSWORD": {
+                "TITLE": "Mot de passe oubli\u00e9",
+                "HEADER": "Apportez mon mot de passe Retour"
+            },
+            "RESET_PASSWORD": {
+                "TITLE": "r\u00e9initialiser le mot de passe",
+                "HEADER": "r\u00e9initialiser le mot de passe"
+            },
+            "CHANGE_PASSWORD": {
+                "TITLE": "changer le mot de passe",
+                "HEADER": "changer le mot de passe"
+            },
+            "CONTACT_US": {
+                "TITLE": "Contactez nous",
+                "HEADER": "Contactez nous"
+            },
+            "MY_DETAILS": {
+                "TITLE": "Mon profil d\u00e9tails",
+                "HEADER": "Mon profil d\u00e9tails"
+            },
+            "MY_PAYMENT_DETAILS": {
+                "TITLE": "Mes coordonn\u00e9es de paiement",
+                "HEADER": "Mes coordonn\u00e9es de paiement"
+            },
+            "MY_DOCUMENTS": {
+                "TITLE": "My payment details",
+                "HEADER": "Documents",
+                "DOCUMENT_TYPE": {
+                    "IDENTITY": "Identity",
+                    "CREDITCARD": "Credit card",
+                    "ADDRESS": "Address"
+                },
+                "DOCUMENT_STATUS": {
+                    "NOT_APPROVED": "Uploaded, waiting for approval",
+                    "APPROVED": "Approved"
+                },
+                "FILE": "Select the document you want to upload",
+                "FILE_LABEL": "(File format can be PDF, JPEG or PNG. Max file size is 2 Mb)",
+                "NAME": "Give a name for the document",
+                "TYPE": "Specify the type of document",
+                "BUTTON": "Upload",
+                "TABLE": {
+                    "NAME": "Name",
+                    "TYPE": "Type",
+                    "STATUS": "Status"
+                }
+            },
+            "DEPOSIT": {
+                "TITLE": "d\u00e9p\u00f4t",
+                "HEADER": "d\u00e9p\u00f4t"
+            },
+            "DEPOSIT_PREFILLING": {
+                "TITLE": "Pr\u00e9remplissage de d\u00e9p\u00f4t",
+                "HEADER": "Pr\u00e9remplissage de d\u00e9p\u00f4t",
+                "HEADING": "Fill in your details"
+            },
+            "DEPOSIT_CONFIRMATION": {
+                "TITLE": "Confirmation de d\u00e9p\u00f4t",
+                "HEADER": "Confirmation de d\u00e9p\u00f4t"
+            },
+            "DEPOSIT_STATUS": {
+                "TITLE": "Statut fort",
+                "HEADER": "Le statut de d\u00e9p\u00f4t"
+            },
+            "WITHDRAWAL": {
+                "TITLE": "retrait",
+                "HEADER": "Withdrawal up to {{balance}}",
+                "ACCOUNT_DETAILS": "Account Details"
+            },
+            "WITHDRAWAL_PREFILLING": {
+                "TITLE": "retrait pr\u00e9remplissage",
+                "HEADER": "retrait pr\u00e9remplissage"
+            },
+            "WITHDRAWAL_CONFIRMATION": {
+                "TITLE": "retrait confirmation",
+                "HEADER": "retrait confirmation"
+            },
+            "PROFILE": {
+                "TITLE": "Profile",
+                "TABS": {
+                    "SETTINGS": "Settings",
+                    "CAMPAINGS": "Campaigns",
+                    "LIMITS": "Limits",
+                    "TRANSACTIONS": "Transactions"
+                }
+            },
+            "LIMIT": {
+                "LOSS": {
+                    "TITLE": "Limit of total loss amount",
+                    "HEADING": "Loss limit {{amount}} {{currency}} per {{period}} is active",
+                    "NAV": "Loss",
+                    "FIELD": {
+                        "AMOUNT": {
+                            "LABEL": "Loss amount",
+                            "PLACEHOLDER": "Loss amount",
+                            "VALIDATION": {
+                                "REQUIRED": "Required"
+                            }
+                        },
+                        "PERIOD": {
+                            "LABEL": "Period",
+                            "PLACEHOLDER": "Period"
+                        },
+                        "AUTO_RENEW": {
+                            "LABEL": "Auto renew"
+                        }
+                    },
+                    "BTN": {
+                        "SUBMIT": "Save"
+                    }
+                },
+                "WAGER": {
+                    "TITLE": "Limit of total wager amount",
+                    "HEADING": "Wager limit {{amount}} {{currency}} per {{period}} until {{endTime}}",
+                    "NAV": "Wager",
+                    "FIELD": {
+                        "AMOUNT": {
+                            "LABEL": "Wager amount",
+                            "PLACEHOLDER": "Wager amount",
+                            "VALIDATION": {
+                                "REQUIRED": "Required"
+                            }
+                        },
+                        "PERIOD": {
+                            "LABEL": "Period",
+                            "PLACEHOLDER": "Period"
+                        },
+                        "AUTO_RENEW": {
+                            "LABEL": "Auto renew"
+                        }
+                    },
+                    "BTN": {
+                        "SUBMIT": "Save"
+                    }
+                },
+                "TIME": {
+                    "TITLE": "Restrict session time",
+                    "HEADING": "Your session time limit {{timeLimitAmount}} h",
+                    "NAV": "Time",
+                    "FIELD": {
+                        "SESSION": {
+                            "LABEL": "Session time",
+                            "PLACEHOLDER": "Session time"
+                        }
+                    },
+                    "BTN": {
+                        "SUBMIT": "Save",
+                        "REMOVE": "Remove"
+                    }
+                },
+                "GAMING": {
+                    "TITLE": "Exclude me from all real-money games",
+                    "HEADING": "I am excluded for all real-money games.",
+                    "NAV": "Gaming",
+                    "FIELD": {
+                        "END_DATE": {
+                            "LABEL": "End date"
+                        }
+                    },
+                    "BTN": {
+                        "SUBMIT": "Exclude"
+                    }
+                },
+                "DEPOSIT": {
+                    "TITLE": "Limit of deposit amount",
+                    "TOTAL": "Limit of total amount for deposit",
+                    "ONE_TIME": "Limit of amount per deposit",
+                    "NAV": "Deposit",
+                    "AMOUNT": "Amount: {{amount}} {{currency}}",
+                    "CLOSE": "Close",
+                    "UNTIL": "Until",
+                    "FIELD": {
+                        "AMOUNT": {
+                            "LABEL": "Amount",
+                            "PLACEHOLDER": "Amount",
+                            "VALIDATION": {
+                                "REQUIRED": "Required"
+                            }
+                        },
+                        "PERIOD": {
+                            "LABEL": "Period",
+                            "PLACEHOLDER": "Period"
+                        },
+                        "END_DATE": {
+                            "LABEL": "End date",
+                            "PLACEHOLDER": "End date"
+                        },
+                        "AUTO_RENEW": {
+                            "LABEL": "Auto renew"
+                        }
+                    },
+                    "BTN": {
+                        "SUBMIT": "Save"
+                    }
+                },
+                "WITHDRAWAL": {
+                    "TITLE": "Disable auto-flush (cancel of withdrawal will be disabled during the selected period)",
+                    "NAV": "Withdrawal",
+                    "FIELD": {
+                        "PERIOD": {
+                            "LABEL": "Limit period",
+                            "PLACEHOLDER": "Limit period"
+                        }
+                    },
+                    "SELECT": {
+                        "DAY": "For a day",
+                        "WEEK": "For a week",
+                        "MONTH": "For a month"
+                    },
+                    "BTN": {
+                        "SUBMIT": "Save",
+                        "REMOVE": "Remove"
+                    }
+                }
+            },
+            "CAMPAIGNS": {
+                "PROMOTIONS": {
+                    "TITLE": "Campaigns Promotions",
+                    "NAV": "Promotions"
+                },
+                "BONUSES": {
+                    "TITLE": "Campaigns Bonuses",
+                    "NAV": "Bonuses",
+                    "NO_FOUND": "No bonuses",
+                    "FOUND": "Found total {{total}}",
+                    "TABLE": {
+                        "NAME": "Campaign Name",
+                        "DATE": "Date Received",
+                        "FREE_SPINS": "Freespins",
+                        "TOTAL": "Total",
+                        "BONUS_WIN": "Bonus Win",
+                        "TURNOVER_FACTOR": "Turnover Factor",
+                        "VALID": "Valid Until",
+                        "STATUS": "Status"
+                    }
+                },
+                "LOYALTY": {
+                    "TITLE": "Campaigns Loyalty",
+                    "HEADER": "Loyalty",
+                    "NAV": "Loyalty",
+                    "FIELDS": {
+                        "TIER": "Tier",
+                        "NEXT_TIER": "Next tier",
+                        "POINTS": "Points",
+                        "REQUIRED_POINTS": "Required points",
+                        "POINTS_NEXT_TIER": "Next tier points",
+                        "AWARD_POINTS": "Award points"
+                    },
+                    "TIER": {
+                        "BRONZE": "Bronze",
+                        "SILVER": "Silver",
+                        "GOLD": "Gold",
+                        "PLATINUM": "Platinum"
+                    }
+                }
+            },
+            "TRANSACTIONS": {
+                "GAME": {
+                    "TITLE": "Game transactions",
+                    "NAV": "Game",
+                    "NO_FOUND": "No transactions",
+                    "CLOSE": "Close",
+                    "FOUND": "Found total {{total}}",
+                    "TABLE": {
+                        "CREATED": "Created",
+                        "GAME": "Game",
+                        "BET": "Bet",
+                        "WIN": "Win",
+                        "STATUS": "Status",
+                        "REFERENCE": "Reference"
+                    },
+                    "SELECT": {
+                        "ALL": "All",
+                        "PENDING": "Pending",
+                        "OK": "Ok",
+                        "CANCELLED": "Cancelled",
+                        "REGECTED": "Rejected",
+                        "ERROR": "Error"
+                    }
+                },
+                "BETTING": {
+                    "TITLE": "Betting transactions",
+                    "NAV": "Betting"
+                },
+                "PROMO": {
+                    "TITLE": "Promo transactions",
+                    "NAV": "Promo",
+                    "FROM": "From",
+                    "TO": "To",
+                    "NO_FOUND": "No transactions",
+                    "CLOSE": "Close",
+                    "FOUND": "Found total {{total}} promotions",
+                    "TABLE": {
+                        "CREATED": "Created",
+                        "NAME": "Name",
+                        "AMOUNT": "Amount",
+                        "TYPE": "Win",
+                        "REFERENCE": "Reference"
+                    }
+                },
+                "DEPOSIT": {
+                    "TITLE": "Deposit transactions",
+                    "NAV": "Deposit",
+                    "FROM": "From",
+                    "TO": "To",
+                    "NO_FOUND": "No transactions",
+                    "CLOSE": "Close",
+                    "FOUND": "Found total {{total}}",
+                    "STATUS": "Status",
+                    "TABLE": {
+                        "CREATED": "Created",
+                        "METHOD": "Method",
+                        "AMOUNT": "Amount",
+                        "BONUS": "Win",
+                        "STATUS": "Status",
+                        "REFERENCE": "Reference"
+                    }
+                },
+                "WITHDRAWAL": {
+                    "TITLE": "Withdrawal transactions",
+                    "NAV": "Withdrawal",
+                    "FROM": "From",
+                    "TO": "To",
+                    "STATUS": "Status",
+                    "NO_FOUND": "No transactions",
+                    "CLOSE": "Close",
+                    "FOUND": "Found total {{total}}",
+                    "TABLE": {
+                        "CREATED": "Created",
+                        "METHOD": "Method",
+                        "AMOUNT": "Amount",
+                        "BONUS": "Win",
+                        "STATUS": "Status",
+                        "REFERENCE": "Reference"
+                    }
+                },
+                "LOYALTY": {
+                    "TITLE": "Loyalty transactions",
+                    "NAV": "Loyalty",
+                    "FOUND": "Found total {{total}}",
+                    "TABLE": {
+                        "CREATED": "Created",
+                        "DESCRIPTION": "Description",
+                        "TYPE": "Type",
+                        "STATUS_POINTS": "Status points",
+                        "AWARD_POINTS": "Award points"
+                    },
+                    "NO_FOUND": "No transactions"
+                }
+            },
+            "GAME": {
+                "BTN": {
+                    "DEMO": {
+                        "PRE": "jouer La D\u00e9mo",
+                        "POST": "Demo"
+                    },
+                    "REAL": {
+                        "PRE": "Connectez-vous & Play r\u00e9el",
+                        "POST": "Real"
+                    },
+                    "FAVOURITE": {
+                        "ADD": "Ajouter aux Favoris",
+                        "REMOVE": "Retirer des favoris"
+                    }
+                },
+                "PROVIDER_PREFIX": "By"
+            },
+            "GAMES_SEARCH": {
+                "TITLE": "Jeux de recherche",
+                "INPUT": {
+                    "PLACEHOLDER": "Search"
+                },
+                "RESULTS": {
+                    "VIEW_ALL": "montre tout",
+                    "NOT_FOUND": "Pas de jeux trouv\u00e9s"
+                }
+            },
+            "FREE_SPINS": {
+                "HEADER": "Bonuses"
+            }
+        },
+        "STATIC_PAGE": {
+            "ABOUT": {
+                "TITLE": "\u00c0 propos de nous"
+            },
+            "TERMS": {
+                "TITLE": "Termes Et Conditions"
+            },
+            "RESPONSIBLE_GAMING": {
+                "TITLE": "Responsible Gaming"
+            },
+            "POLICY": {
+                "TITLE": "Politique de confidentialit\u00e9"
+            },
+            "BONUS_TERMS": {
+                "TITLE": "Bonus Terms"
+            },
+            "AFFILIATES": {
+                "TITLE": "Affiliates"
+            },
+            "FOOTER": {
+                "DEPOSIT": {
+                    "HEADING": "Secure deposits with"
+                },
+                "GAMES_TOTAL": {
+                    "HEADING": "{{totalGames}} games provided by"
+                },
+                "GODADDY": "https://seal.godaddy.com/getSeal?sealID=hSoVSpSz4gjmIUhq5veMQTKVNsg4K08JU4DUnPLVpPaqaEu77Fc8zWrD5LbV",
+                "TEXT1": "luckycasino.com is operated by Viral Technology N.V a company incorporated under the laws of Curacao with corporate registration number 123604 and its registered address on Landhuis Groot Kwartier, Groot Kwartierweg 12, Curacao. Its online E-gaming license is 8048/JAZ2011-015.",
+                "TEXT2": "Payment processing is done by Viral Interactive LTD, a company registered in Malta with corporate registration number C66828 and its registered address on 2nd Floor, Cobalt house, Triq Notabile, Birkirikara, BKR 3000. luckycasino.com is a trademark of Fortuity Holdings LTD."
+            }
+        },
+        "MODAL": {
+            "CHECK_PASSWORD": {
+                "HEADER": "mot de passe"
+            },
+            "CHECK_BIRTHDATE": {
+                "HEADER": "Birth Date"
+            }
+        },
+        "NAVBAR": {
+            "BTN": {
+                "LOGIN": "S'identifier",
+                "MENU": "menu",
+                "BACK": "Retour"
+            }
+        },
+        "SIDEBAR": {
+            "GROUP": {
+                "SIGN_IN": "se connecter",
+                "NAVIGATION": "navigation",
+                "MY_ACCOUNT": "mon compte",
+                "PAYMENTS": "Banque",
+                "HOME": "accueil",
+                "SEARCH": "recherche",
+                "DEPOSIT": "d\u00e9p\u00f4t"
+            },
+            "BTN": {
+                "LOGIN": "S'identifier",
+                "LOGOUT": "Se D\u00e9connecter",
+                "REGISTRATION": "inscription",
+                "FORGOT_PASSWORD": "Mot De Passe Oubli\u00e9",
+                "CHANGE_PASSWORD": "Changement de mot de passe",
+                "CONTACT_US": "Contactez nous",
+                "MY_DETAILS": "mes Details",
+                "MY_PAYMENT_DETAILS": "Mes coordonn\u00e9es de paiement",
+                "DEPOSIT": "d\u00e9p\u00f4t",
+                "WITHDRAWAL": "retrait",
+                "TERMS": "Termes Et Conditions",
+                "PRIVACY_POLICY": "Politique de confidentialit\u00e9",
+                "ABOUT_US": "sur",
+                "MY_DOCUMENTS": "T\u00e9l\u00e9charger les documents",
+                "HOME": "accueil",
+                "CASINO": "casino",
+                "BETTING": "pari",
+                "CREATE_ACCOUNT": "cr\u00e9er un compte",
+                "UPLOAD_DOCUMENTS": "Upload documents"
+            },
+            "TEXT": {
+                "WELCOME": "Bienvenue,",
+                "BALANCE_TITLE": "balance"
+            }
+        },
+        "SLIDE_MENU": {
+            "HEADER": {
+                "GREETING": "Hi,&nbsp;{{user_name}}!",
+                "BALANCE": "Your current balance is",
+                "PROMO": "You\u2019ll get <strong>20 Free Spins</strong> on <br/> Star Burst"
+            },
+            "LINKS": {
+                "LOGIN": "Login",
+                "FORGOT_PASSWORD": "Forgot Password",
+                "ALL_GAMES": "See all games",
+                "SIGN_UP": "Sign Up Now",
+                "DEPOSIT": "Deposit",
+                "CASINO": "Casino",
+                "HOME": "Home"
+            },
+            "ACCOUNT": {
+                "HEADER": "My Account",
+                "DETAILS": "My Details",
+                "PAYMENT_DETAILS": "My Payment Details",
+                "CHANGE_PASSWORD": "Password Change",
+                "LOGOUT": "Logout"
+            },
+            "BANK": {
+                "HEADER": "Bank",
+                "DEPOSIT": "Deposit",
+                "CASHIER": "Cashier",
+                "WITHDRAWAL": "Withdrawal"
+            },
+            "INFORMATION": {
+                "HEADER": "Information",
+                "ABOUT": "About Lucky Casino",
+                "CONTACT_US": "Contact us",
+                "TERMS": "Terms & Conditions",
+                "PRIVACY_POLICY": "Privacy Policy"
+            }
+        },
+        "GAME_LIST": {
+            "VIEW_ALL": "Voir tout"
+        },
+        "USER_BALANCE": {
+            "TITLE": "Balance",
+            "CASH": "Cash",
+            "PROMO": "Promo",
+            "TOTAL": "solde total",
+            "TURNOVER": "Current turnover limit",
+            "AWARD_POINTS": "Gold points",
+            "WAGERING_HINT": "(D\u00e9brochable \u00e0 100%)",
+            "BTN": {
+                "CONVERT": "Convertir"
+            }
+        },
+        "CAMPAIGNS": {
+            "HEADER": "Available Promotions",
+            "FREE_SPINS": "{{bonusAmount}} free spins ({{provider}}) for deposit from {{min}} to {{max}}",
+            "PROMO": "{{bonusAmount}} promo money for deposit from {{min}} to {{max}}",
+            "REQUIREMENT": "Wagering Requirement = Bonus x {{turnoverFactor}}",
+            "BTN": "Claim Bonus!"
+        },
+        "PLAY": {
+            "BTN": "Play"
+        },
+        "PROFILE": {
+            "HEADER": "Profile&nbsp;&&nbsp;Settings"
+        },
+        "GIFTS": {
+            "HEADER": "Bonuses"
+        },
+        "FREE_SPINS": {
+            "HEADER": "Free Spins",
+            "SHORT": "Free"
+        },
+        "LOYALTY": {
+            "HEADER": "Loyalty",
+            "TIER": {
+                "BRONZE": "Bronze",
+                "SILVER": "Silver",
+                "GOLD": "Gold",
+                "PLATINUM": "Platinum"
+            },
+            "FIELDS": {
+                "TIER": "Loyalty Tier",
+                "NEXT_TIER": "Next Tier",
+                "POINTS": "Current Status Points",
+                "REQUIRED_POINTS": "Required Points for the Next Tier",
+                "POINTS_NEXT_TIER": "Status Points of the Next Tier",
+                "AWARD_POINTS": "Current Award Points"
+            }
+        },
+        "INACTIVITY": {
+            "MESSAGE": "You have been logged out for inactivity reason"
+        },
+        "BUTTONS": {
+            "LOADING": "Loading...",
+            "SHOW_MORE": "Show more",
+            "SUPPORT": "Support"
+        },
+        "BROWSER_HAPPY": "You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience."
+    },
+    "ERR": {
+        "CODE": {
+            "0": "Erreur non identifi\u00e9e.",
+            "100": "Exception g\u00e9n\u00e9rale.",
+            "101": "L'\u00e9l\u00e9ment demand\u00e9 n'a pas pu \u00eatre trouv\u00e9.",
+            "102": "Les donn\u00e9es fournies sont incompl\u00e8tes.",
+            "103": "Format du nombre est pas correct.",
+            "104": "Les erreurs de validation: {{fields}}.",
+            "105": "Email <strong> {{email}} </strong> est dupliqu\u00e9.",
+            "106": "Limite d'inscription d\u00e9pass\u00e9e.",
+            "107": "D\u00e9sol\u00e9, connexion a \u00e9chou\u00e9. S'il vous pla\u00eet essayer de nouveau! Vous pouvez essayer de <strong> {{number}} </strong> fois avant de votre compte seront gel\u00e9s.",
+            "108": "D\u00e9sol\u00e9, votre pays est sur la liste noire.",
+            "109": "Mauvais <strong> {{field}} </strong>. Vous pouvez essayer de <strong> {{number}} </strong> fois avant de votre compte seront gel\u00e9s.",
+            "110": "L'utilisateur est introuvable.",
+            "111": "Votre compte est bloqu\u00e9. S'il vous pla\u00eet contacter le support.",
+            "112": "Votre compte a \u00e9t\u00e9 ferm\u00e9. S'il vous pla\u00eet contacter le support.",
+            "113": "Ce compte a d\u00e9j\u00e0 \u00e9t\u00e9 activ\u00e9!",
+            "114": "Compte est pas activ\u00e9.",
+            "115": "Aucune session disponible.",
+            "116": "Le code d'activation est expir\u00e9.",
+            "117": "Vous avez atteint votre limite de paiement.",
+            "118": "Paiement n'a pas \u00e9t\u00e9 couronn\u00e9e de succ\u00e8s.",
+            "119": "\u00c9chec de la connexion avec le fournisseur de paiement.",
+            "120": "Au moment o\u00f9 vous \u00eates exclu pour tous les jeux en argent r\u00e9el.",
+            "121": "Vous ne disposez pas de suffisamment solde de votre compte. S'il vous pla\u00eet d\u00e9poser plus de fonds!",
+            "122": "Vous avez d\u00e9pass\u00e9 les limites de jeu.",
+            "123": "Votre BGC jeton est dupliqu\u00e9.",
+            "124": "Retrait est bloqu\u00e9 jusqu'\u00e0 ce que vous avez fait le premier d\u00e9p\u00f4t.",
+            "125": "Pas tous les d\u00e9tails de paiement sont fournis.",
+            "126": "Retrait est bloqu\u00e9 tant que vos informations de paiement ont \u00e9t\u00e9 modifi\u00e9es sur <strong> {{start}} commencer </strong>. <br> Vous pouvez faire un nouveau retrait \u00e0 partir de <strong>{{end}}</strong>.",
+            "127": "Retrait est bloqu\u00e9 jusqu'\u00e0 ce que vous avez remettre <strong> {{currency}} monnaie {{amount}} </strong>.",
+            "128": "Montant de p\u00e9pites est erron\u00e9.",
+            "129": "Payment Not Allowed.",
+            "130": "L'utilisateur est pas active.",
+            "131": "Jeu pas \u00e9t\u00e9 trouv\u00e9e pr\u00e9vu nom ou la r\u00e9f\u00e9rence.",
+            "132": "Ce jeu a \u00e9t\u00e9 d\u00e9sactiv\u00e9.",
+            "134": "BgcLossCreditLimitException.",
+            "140": "Externe erreur de connexion.",
+            "150": "Code d'activation ne correspond pas.",
+            "155": "Conditions ne sont pas accept\u00e9s.",
+            "160": "DocumentUploadException.",
+            "170": "Echec de l'enregistrement, adresse dupliqu\u00e9e.",
+            "171": "DuplicatedNicknameException.",
+            "180": "Les donn\u00e9es sont dupliqu\u00e9es: {{fields}}.",
+            "181": "Email n'a pas \u00e9t\u00e9 trouv\u00e9",
+            "182": "S'il vous pla\u00eet assurez-vous que votre nouveau mot de passe est le m\u00eame que l'ancien.",
+            "183": "Le code d'activation est erron\u00e9."
+        },
+        "VALIDATION": {
+            "REQUIRED": "{{name}} est n\u00e9cessaire.",
+            "MINLENGTH": "Longueur Min est {{number}} cars.",
+            "MAXLENGTH": "Longueur max est {{number}} cars.",
+            "MIN": "Valeur Min est {{number}}.",
+            "MAX": "Valeur max est {{number}}.",
+            "PATTERN": "Cha\u00eene contient des caract\u00e8res non valides.",
+            "EMAIL": "S'il vous pla\u00eet entrer une adresse email valide.",
+            "DUPLICATED": "Cette {{name}} existe d\u00e9j\u00e0.",
+            "PHONE": "S'il vous pla\u00eet entrez un num\u00e9ro de t\u00e9l\u00e9phone valide",
+            "NUMBER": "S'il vous pla\u00eet entrer un num\u00e9ro valide"
+        }
+    },
+    "EXT": {
+        "GAME": {
+            "GROUP": {
+                "MOST_POPULAR": "Popular",
+                "JACKPOT": "Jackpots"
+            }
+        },
+        "COUNTRY": {
+            "RUS": "Russian"
+        }
+    }
+}

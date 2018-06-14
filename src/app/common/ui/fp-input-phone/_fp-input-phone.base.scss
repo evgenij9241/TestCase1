@@ -1,0 +1,13 @@
+.fp-input-phone {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4px 1px 1px;
+  &__code {
+    margin: 1px 1px;
+    flex: 1 0 140px;
+  }
+  &__number {
+    margin: 1px 1px;
+    flex: 2 0 140px;
+  }
+}

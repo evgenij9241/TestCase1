@@ -1,0 +1,170 @@
+.fp-modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: -25%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  @media (max-width: $screen-sm) {
+    top: -5%;
+  }
+
+  &__header {
+    position: relative;
+    top: 0;
+  }
+
+  &__heading {
+    font-size: $fp-font-size-l;
+    margin-bottom: 3px;
+    margin-top: 6px;
+    text-transform: uppercase;
+    color: $fp-color-base;
+  }
+
+  &__heading-sub {
+    font-size: $fp-font-size-xl;
+    margin-top: 1rem;
+    font-weight: $fp-font-weight-base;
+    color: $fp-color-heading-muted;
+
+  }
+
+  & .fp-option-group {
+    box-shadow: none;
+  }
+
+  &__dialog {
+    position: relative;
+    cursor: default;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &--sm .fp-modal__content {
+      max-width: $modal-sm;
+      padding: 10px;
+    }
+    &--md .fp-modal__content {
+      max-width: $modal-md;
+      padding: 5%;
+    }
+    &--lg .fp-modal__content {
+      max-width: $modal-lg;
+      padding: 5%;
+    }
+    &--full {
+      position: fixed;
+      max-height: 100vh;
+      width: 100vw;
+      display: block;
+
+      & .fp-modal__content {
+        padding: 0;
+        display: block;
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    background-color: $modal-content-bg;
+    border-radius: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    background-clip: padding-box;
+    outline: 0;
+
+    //@media (max-width: $screen-md) {
+    //    padding: 5px;
+    //}
+  }
+
+  opacity: 0;
+  transition: all .15s linear;
+
+  &.in {
+    opacity: 1;
+    top: 0;
+  }
+
+  &__footer {
+    text-align: center;
+  }
+
+}
+
+.fp-modal-backdrop {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal-background;
+  background-color: $modal-backdrop-bg;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  // Fade for backdrop
+  &.fade { opacity: 0 }
+  &.in { opacity: 1 }
+
+}
+
+.fp-modal__close {
+  display: block;
+  padding: 20px;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  @media (max-width: $screen-sm) {
+    padding: 10px;
+    top: 0;
+    right: 0;
+  }
+}
+
+.fp-modal__close-icon {
+  fill: $fp-color-separator;
+  width: 20px;
+  height: 20px;
+  @media (max-width: $screen-sm) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.modal-open {
+  overflow: hidden!important;
+  height: 100% !important;
+  width: 100% !important;
+    .app-view {
+      overflow: hidden;
+      width: 100% !important;
+      height: 100%!important;
+    }
+    .fp-slide-content {
+      overflow: hidden;
+    }
+}
+
+.modal-open .fp-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}

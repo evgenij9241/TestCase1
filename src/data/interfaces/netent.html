@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title></title>
+  <script src="https://netent-static.casinomodule.com/gameinclusion/library/gameinclusion.js"></script>
+  <style>
+    html, body {
+      width: 100% !important;
+      height: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      overflow: hidden !important;
+    }
+    iframe, object {
+      width: 100%!important;
+      height: 100% !important;
+    }
+    #error {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 15px;
+      margin: 10px;
+      border: 1px solid #ebccd1;
+      border-radius: 4px;
+      color: #a94442;
+      font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f2dede;
+      z-index: 500;
+    }
+  </style>
+</head>
+<body>
+<div id="game" style="height: 100%; width: 100%;"></div>
+<div id="error"></div>
+​
+<script>
+  function getUrlParam(url, name) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url || window.location.href);
+    return !results ? null : (!results[2] ? '' : decodeURIComponent(results[2].replace(/\+/g, ' ')));
+  }
+
+  window.onload = function () {
+    netent.launch({
+      gameId: getUrlParam(null, 'gameId'),
+      staticServer: getUrlParam(null, 'staticServer'),
+      gameServer: getUrlParam(null, 'gameServer'),
+      sessionId: getUrlParam(null, 'sessionId'),
+      language: getUrlParam(null, 'language'),
+      targetElement: 'game',
+      mobileParams: {
+        lobbyUrl: getUrlParam(null, 'lobbyUrl')
+      }
+    }, function () {
+      var iframe = document.querySelector('iframe');
+      if (iframe) {
+        var height = iframe.style.height.replace('px', '');
+        var width = iframe.style.width.replace('px', '');
+        if (window.parent && width && height) {
+          window.parent.postMessage({reinit: true, ratio: width / height}, '*');
+        }
+      }
+    }, function (e) {
+      var error = document.getElementById('error');
+      error.innerHTML = '' + (e || {}).message;
+      error.style.display = 'block';
+    });
+  };
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<div class="fp-option-group">
+  <div class="fp-option-group__holder">
+
+    <label class="fp-option fp-option--block" ng-if="firstMethod">
+      <input type="radio" name="{{name}}" ng-model="group.model" ng-value="{{firstMethod.value}}">
+      <div class="fp-option__content">
+        <div class="fp-option__content-holder">
+          <div class="fp-option__header"><fp-icon name="{{firstMethod.icons[0]}}" class-name="fp-option__icon"></fp-icon>&nbsp;&nbsp;<fp-icon name="{{firstMethod.icons[1]}}"></div>
+          <div class="fp-option__description fp-option__description--method">{{firstMethod.name | translate}}</div>
+        </div>
+      </div>
+    </label>
+
+    <label class="fp-option" ng-repeat="(key, option) in options track by $index">
+      <input type="radio"
+             id="{{name + '_'+ $index}}"
+             tabindex="0"
+             name="{{name}}"
+             ng-value="option['value']"
+             ng-model="group.model">
+      <div class="fp-option__content">
+        <div class="fp-option__content-holder">
+          <div class="fp-option__header"><fp-icon name="{{option['icons'][0]}}" class-name="fp-option__icon"></fp-icon></div>
+          <div class="fp-option__description fp-option__description--method">{{option['name'] | translate}}</div>
+        </div>
+      </div>
+    </label>
+
+  </div>
+</div>

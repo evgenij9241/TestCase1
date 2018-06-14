@@ -1,0 +1,31 @@
+$fp-gutter: 20px;
+$fp-header-hight: 150px;
+
+$fp-header-hight-compact: 52px;
+$fp-header-logo-width-compact: 120px;
+$fp-header-logo-width-mobile: $fp-header-hight-compact;
+
+// Override bootstrap variables
+$grid-gutter-width:          $fp-gutter;
+
+$modal-md: 500px;
+$modal-sm: 400px;
+
+
+$container-tablet:           740px;
+$container-desktop:          900px;
+$container-large-desktop:    1080px;
+
+$fp-border-radius-base: 4px;
+
+$fp-padding-base-vertical:    8px;
+$fp-padding-base-horizontal:  15px;
+$fp-padding-large-vertical:   18px;
+$fp-padding-large-horizontal: 40px;
+$fp-padding-medium-vertical:   13px;
+$fp-padding-medium-horizontal: 22px;
+$fp-padding-small-vertical:   5px;
+$fp-padding-small-horizontal: 10px;
+
+$popover-max-width: 180px;
+$popover-arrow-width: 15px;

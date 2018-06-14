@@ -1,0 +1,34 @@
+.fastclickable {
+  color: black;
+  background-color: white;
+  border: 1px dotted black;
+  width: 150px;
+  height: 150px;
+}
+.fastclickable.fastclick-touched {
+  background-color: red;
+  color: green;
+}
+.fastclickable.fastclick-active {
+  background-color: green;
+  color: red;
+}
+
+.fastclickable.inner.fastclick-touched {
+  background-color: red;
+  color: green;
+}
+.fastclickable.inner.fastclick-active {
+  background-color: maroon;
+  color: yellow;
+}
+
+.scroller {
+  max-height: 300px;
+  overflow: auto;
+}
+.scrollable-element {
+  height: 200px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}

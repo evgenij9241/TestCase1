@@ -1,0 +1,4 @@
+<ng-include ng-if="isPayAndPlayCountry" src="'/app/common/fp-game/thumbnail/fp-thumbnail-pnp.tmpl.html'"></ng-include>
+<ng-include ng-if="!isPayAndPlayCountry && isMobile" src="'/app/common/fp-game/thumbnail/fp-thumbnail-mobile.tmpl.html'"></ng-include>
+<ng-include ng-if="!isPayAndPlayCountry && !isMobile" src="'/app/common/fp-game/thumbnail/fp-thumbnail-desktop.tmpl.html'"></ng-include>
+<!--fp-thubnail-->

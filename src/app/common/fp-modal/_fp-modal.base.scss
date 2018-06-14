@@ -1,0 +1,230 @@
+.fp-modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: -25%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+
+  //&.fade .fp-modal__dialog {
+  //  @include translate(0, -25%);
+  //  @include transition-transform(0.3s ease-out);
+  //}
+  //&.in .fp-modal__dialog { @include translate(0, 0) }
+&__gdpr {
+  display: block;
+  padding-top: 12px;
+  font-size: 0.73rem;
+  position: relative;
+  width: 100%;
+  color: #282828;
+  body.fp-dark-theme & {
+    color: white;
+  }
+}
+
+  &__header {
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 40px;
+    margin-bottom: 3px;
+    margin-top: 6px;
+    @media (max-width: $screen-xs) {
+      margin-top: -3%;
+    }
+  }
+
+  &__heading-sub {
+    font-size: $fp-font-size-xl;
+    margin-top: 1rem;
+    font-weight: $fp-font-weight-base;
+    color: $fp-color-heading-muted;
+    @media (max-width: $screen-xs) {
+     display: none;
+    }
+  }
+
+  & .fp-option-group {
+    box-shadow: none;
+  }
+
+  body.fp-dark-theme  &__heading-sub {
+    color: $fp-color-heading-muted-dark;
+
+  }
+
+  &--mobile form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &--mobile &__dialog {
+    width: 100%!important;
+    height: 100%;
+    body.fp-dark-theme & {
+      color: $fp-color-base-dark;
+    }
+    overflow-y: scroll!important;
+    margin: 0 auto!important;
+    -webkit-overflow-scrolling: touch;
+    @media (max-width: 700px) {
+      padding: 0 10%!important;
+    }
+    @media (min-width: $screen-sm-min) {
+      max-width: $modal-sm;
+      margin: 30px auto;
+    }
+    @media (min-width: 600px) {
+      width: 100%;
+      max-width: 100%;
+      margin: 30px auto;
+    }
+  }
+
+  &__dialog {
+    position: relative;
+    width: auto;
+    margin: 10px auto;
+    cursor: default;
+
+
+    &--sm { max-width: $modal-sm; }
+    &--md {
+      max-width: $modal-md;
+      margin-top: 160px;
+    }
+    &--lg {
+      @media (min-width: $screen-md-min) {
+        width: $modal-lg;
+      }
+    }
+  }
+
+  &--mobile &__content {
+    box-shadow: none!important;
+    margin: 0 auto!important;
+  }
+
+  body:not(.fp-dark-theme) &__content {
+    position: relative;
+    background-color: $modal-content-bg;
+    border-radius: $border-radius-base;
+
+    box-shadow: 0 5px 0 0 rgba(0,0,0,.5);
+
+    background-clip: padding-box;
+    outline: 0;
+    padding: 10% 10%;
+    @media (max-width: $screen-xs) {
+      padding: 20px 40px;
+    }
+  }
+  body.fp-dark-theme &__content {
+    position: relative;
+    background-color: #212020;
+    color: white!important;
+    //border: 1px solid $fp-color-success;
+    border-radius: $border-radius-base;
+
+    //box-shadow: 0 5px 0 0 rgba(0,0,0,.5);
+
+    background-clip: padding-box;
+    outline: 0;
+    padding: 10% 10%;
+    @media (max-width: $screen-xs) {
+      padding: 20px 40px;
+    }
+  }
+
+  opacity: 0;
+  transition: all .15s linear;
+
+  &.in {
+    opacity: 1;
+    top: 0;
+  }
+
+  &__footer {
+    text-align: center;
+  }
+
+}
+
+.fp-modal-backdrop {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal-background;
+  background-color: $modal-backdrop-bg;
+  opacity: 0;
+  cursor: pointer;
+
+  transition: opacity 0.3s ease;
+
+  // Fade for backdrop
+  &.fade { opacity: 0 }
+  &.in { opacity: 1 }
+
+  &--mobile {
+    background-color: $fp-color-bg;
+    body.fp-dark-theme & {
+      background-color: $fp-color-bg-dark;
+    }
+  }
+}
+
+.fp-modal__close {
+  display: block;
+  padding: 10px;
+  position: absolute!important;
+  right: 15px!important;
+  top: 15px;
+  z-index: 10!important;
+  @media (max-width: $screen-xs) {
+    top: 0!important;
+    right: 0!important;
+  }
+}
+
+.fp-modal__close-icon {
+  fill: $fp-color-bg!important;
+  width: 25px!important;
+  height: 25px!important;
+  &--mobile{
+    fill: $fp-color-contrast!important;
+  }
+}
+
+.modal-open {
+  overflow: hidden!important;
+  height: 100% !important;
+  width: 100% !important;
+    .app-view {
+      overflow: hidden;
+      width: 100% !important;
+      height: 100%!important;
+    }
+    .fp-slide-content {
+      overflow: hidden;
+    }
+}
+
+.modal-open .fp-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+//html.modal-open, html.modal-open > body {
+//  overflow: hidden!important;
+//  height: 100% !important;
+//  width: 100% !important;
+//}

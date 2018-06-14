@@ -1,0 +1,25 @@
+.fp-element {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  
+  &__img {
+    width:100%;
+  }
+  
+  &__content {
+    font-size: 1em;
+    font-weight: normal;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    border: 4px #ddd solid;
+    height: 100%;
+    display: block;
+    width: 100%;
+  }
+}

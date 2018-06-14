@@ -1,0 +1,51 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2015 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Rene Bieder
+ * License URL: http://www.fontspring.com/licenses/rene-bieder/webfont
+ *
+ *
+ */
+
+
+@font-face {
+    font-family: 'Campton';
+    src: url('/assets/fonts/campton/Campton-Book-webfont.eot');
+    src: url('/assets/fonts/campton/Campton-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/campton/Campton-Book-webfont.woff2') format('woff2'),
+         url('/assets/fonts/campton/Campton-Book-webfont.woff') format('woff'),
+         url('/assets/fonts/campton/Campton-Book-webfont.ttf') format('truetype'),
+         url('/assets/fonts/campton/Campton-Book-webfont.svg#camptonbook') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Campton';
+    src: url('/assets/fonts/campton/Campton-SemiBold-webfont.eot');
+    src: url('/assets/fonts/campton/Campton-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/campton/Campton-SemiBold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/campton/Campton-SemiBold-webfont.woff') format('woff'),
+         url('/assets/fonts/campton/Campton-SemiBold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/campton/Campton-SemiBold-webfont.svg#camptonsemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+
+}

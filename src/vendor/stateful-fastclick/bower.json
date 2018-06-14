@@ -1,0 +1,35 @@
+{
+  "name": "stateful-fastclick",
+  "description": "Enhances ftlabs's excellent fastclick library with different touch states for a even snappier UI",
+  "homepage": "https://github.com/burnedikt/stateful-fastclick",
+  "authors": [
+    "Benedikt Reiser <benedikt.reiser@gmail.com>"
+  ],
+  "main": "dist/stateful-fastclick.js",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    ".jshintrc",
+    "Gruntfile.coffee",
+    "test/**",
+    "src/**",
+    "package.json",
+    "node_modules/**"
+  ],
+  "keywords": [
+    "fastclick",
+    "innoactive",
+    "touch",
+    "states",
+    "stateful",
+    "hover",
+    "active",
+    "click",
+    "delay"
+  ],
+  "version": "1.0.0",
+  "dependencies": {
+    "fastclick": "burnedikt/fastclick#ios-scroll-fix",
+    "classlist": "~2014.12.13"
+  }
+}

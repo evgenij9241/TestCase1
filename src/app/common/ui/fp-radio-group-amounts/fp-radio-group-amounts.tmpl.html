@@ -1,0 +1,36 @@
+<div class="fp-option-group">
+  <div class="fp-option-group__holder">
+
+    <label class="fp-option"
+           ng-repeat="(key, option) in options track by $index"
+           ng-show="option['value'] >= min"
+           ng-class="$index === optionsLen - 1 && lastWide ? 'fp-option--block' : null"
+           fp-on-touch="">
+      <input type="radio"
+             id="{{name + '_'+ $index}}"
+             tabindex="0"
+             name="{{name}}"
+             ng-value="option['value']"
+             ng-model="group.model">
+      <div class="fp-option__content">
+        <div class="fp-option__content-holder">
+          <div class="fp-option__header">{{(option['name'] | currency:currency).replace('.00', '')}}</div>
+          <div class="fp-option__description" ng-if="option['bonus']">
+            <div class="fp-option__label">{{'APP.FORM.DEPOSIT.FIELD.AMOUNT_RANGE.BONUS' | translate}}</div>
+          </div>
+        </div>
+      </div>
+    </label>
+
+    <label class="fp-option fp-option--block">
+      <input type="radio" name="{{name}}" ng-model="group.amount" value="yes">
+      <div class="fp-option__content">
+        <div class="fp-option__content-holder fp-option__content-holder--value">
+          <fp-input-currency ng-model="model" min="min" max="max" currency="currency"></fp-input-currency>
+        </div>
+
+      </div>
+    </label>
+
+  </div>
+</div>

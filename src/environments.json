@@ -1,0 +1,13 @@
+{
+  "development": {
+    "devMode": true,
+    "staging": true
+  },
+  "staging": {
+    "staging": true,
+    "api": ""
+  },
+  "production": {
+    "api": ""
+  }
+}

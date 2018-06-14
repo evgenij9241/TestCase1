@@ -1,0 +1,9 @@
+<div class="fp-modal-backdrop"
+     ng-class="{'fp-modal-backdrop--mobile' : isMobile}"
+     modal-animation-class="fade"
+     modal-in-class="in"
+     ng-style="{'z-index': 1040 + (index && 1 || 0) + index*10}">
+  <a ng-click="close($event)"  class="fp-modal__close" ng-if="!isMobile && !blocker">
+    <fp-icon-svg name="icon-close" class-name="fp-modal__close-icon"></fp-icon-svg>
+  </a>
+</div>

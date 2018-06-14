@@ -1,0 +1,36 @@
+// Project uses bootstrap as mixin library with only normalize reset included as-is
+
+// Base variables
+@import "variables.pnp";
+
+// Base Bootstrap utilities & mixins
+@import "../../vendor/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "../../vendor/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../vendor/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Base mixins
+@import "mixins";
+
+// Sprites
+@import "sprites";
+// Generate sprite rules and media queries
+@include fp-make-sprites-icons($retina-groups);
+
+//@import "font-muli";
+//@import "font-campton";
+
+@import "font-neusa";
+
+@import "colors.pnp";
+@import "typography.pnp";
+
+// Base layout styles
+@import "layout";
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injectorPNP
+// endinjectorPNP
+
+/* Xmas theme */
+//@import "xmas";

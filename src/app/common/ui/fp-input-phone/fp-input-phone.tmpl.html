@@ -1,0 +1,9 @@
+<div class="fp-input-phone fp-form-input-group">
+    <div class="fp-input-phone__code fp-form-input-icon">
+        <fp-icon-svg name="form-icon-phone" class-name="fp-form-icon"></fp-icon-svg>
+        <fp-select ng-model="vm.code" options="vm.phoneCodes" disabled="{{vm.options.data.disabled}}"></fp-select>
+    </div>
+    <div class="fp-input-phone__number">
+        <input id="fp_input_phone" class="fp-form-input" fp-numeric-only fp-on-touch="" type="text" ng-model="vm.phone" placeholder="{{vm.placeholder | translate}}" ng-disabled="vm.options.data.disabled"/>
+    </div>
+</div>

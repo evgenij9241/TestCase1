@@ -1,0 +1,155 @@
+<!doctype html>
+<html ng-app="finnplay" class="loading" style="min-width: 320px; min-height: 100%"  fp-screen-orientation="300" ng-class="{'mobile' : isMobile}">
+  <head>
+    <meta charset="utf-8">
+    <title ng-bind="pageTitle | translate">Casino</title>
+    <meta name="description" content="">
+    <meta name="title" content="">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#d4f3fe">
+    <!-- Embedd due to FF issue-->
+    <style ng-if="!dark">
+      .fp-stroke {
+        stroke: #037225;
+        stroke-width: 3;
+      }
+      .fp-stroke-b {
+        stroke: #FFFFFF;
+        stroke-width: 3;
+      }
+      .fp-fill-a {
+        fill: #FFCE00;
+      }
+      .fp-fill-b {
+        fill: #FFFFFF;
+      }
+      .fp-fill-c {
+        fill: #037225;
+      }
+    </style>
+    <style ng-if="dark">
+      .fp-fill-a {
+        fill: none;
+      }
+      .fp-fill-b {
+        fill: #33FE76;
+        stroke: none;
+      }
+      .fp-fill-b.fp-fill-alt {
+         fill: none;
+         stroke: #33FE76;
+         stroke-width: 2;
+       }
+      .fp-fill-c {
+        stroke: none;
+        fill: #33FE76;
+      }
+      .fp-stroke {
+        fill: none;
+        stroke: #33FE76;
+        stroke-width: 3;
+      }
+    </style>
+
+    <style>
+      .fp-splash {
+        display: none;
+        background: #662482!important;
+      }
+
+      html.loading, .loading body {
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .loading .fp-splash, .loading.fp-splash {
+        display: block !important;
+        width: 100%!important;
+        height: 100%!important;
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important;
+        text-align: center!important;
+        position: absolute!important;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5000;
+      }
+    </style>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp/serve,src}) /styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+    <!--build:css({.tmp/serve,src}) /styles/app.css ng-if="!$root.isPayAndPlayCountry" -->
+    <!--inject:css -->
+    <!--css files will be automatically insert here -->
+    <!--endinject -->
+    <!--endbuild -->
+
+    <!--build:css({.tmp/serve,src}) /styles/pnp.css ng-if="$root.isPayAndPlayCountry" -->
+    <!--inject:css -->
+    <!--css files will be automatically insert here -->
+    <!--endinject -->
+    <!--endbuild -->
+
+
+
+  </head>
+  <body style="min-height: 100vh;" ng-class="{'fp-dark-theme': dark, 'fp-pnp': $root.isPayAndPlayCountry}">
+    <div class="fp-splash">
+      <img  width="50" height="50" src="data:image/png;base64,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" alt="Lucky Casino">
+    </div>
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden" ng-include="'/assets/svg/icons.svg'"></div>
+    <!--[if lt IE 10]>
+      <p class="browsehappy" ng-bind-html="'APP.BROWSER_HAPPY' | translate"></p>
+    <![endif]-->
+    <div ui-view class="app-view" ng-class="{'lockDesktopWidth' : !isMobile}"></div>
+
+    <!--<div class="footer__siteseal" ng-show="!isGamePage">-->
+      <!--<script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=hSoVSpSz4gjmIUhq5veMQTKVNsg4K08JU4DUnPLVpPaqaEu77Fc8zWrD5LbV"></script>-->
+    <!--</div>-->
+
+    <!-- build:js(src) /scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) /scripts/app.js -->
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here-->
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+
+  </body>
+</html>

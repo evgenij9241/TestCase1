@@ -1,0 +1,59 @@
+<div name="thumbnail-container" class="{{::thumbnailClass}}">
+  <div class="fp-thumbnail__loader">
+    <svg name="thumbnail-placeholder" style="display: block;" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 360'>
+      <use xlink:href="#icon-icon-image-placeholder"></use>
+    </svg>
+  </div>
+  <div class="fp-thumbnail__wrapper">
+    <div ng-if="::game.label" class="fp-thumbnail__label fp-thumbnail__label--{{::game.label}}">{{::game.label}}</div>
+
+
+
+    <div ng-if="game.jackpot" class="fp-thumbnail__jackpot">
+      <div class="fp-thumbnail__jackpot-heading">Jackpot</div>
+      <div class="fp-thumbnail__jackpot-value">{{game.jackpot.amountString}}</div>
+    </div>
+
+
+    <div ng-if="::game.newGame" class="fp-thumbnail__new">new</div>
+    <div class="fp-thumbnail__holder">
+      <fp-image-new image-src="{{game.src}}"
+                    loaded="onImageLoaded()"
+                    retina="{{::retina}}"
+                    noretina="{{::noretina}}"
+                    custom-class="fp-thumbnail__img">
+      </fp-image-new>
+
+      <div class="fp-thumbnail__overlay">
+        <a name="thumbnail-favourite-icon" ng-if="isLoggedIn" href="" class="fp-thumbnail__fav" ng-click="toggleFavourite($event)">
+          <fp-icon-svg name="icon-heart" size="md" class-name="fp-thumbnail__fav-icon"></fp-icon-svg>
+        </a>
+        <div class="fp-thumbnail__content">
+          <div class="fp-thumbnail__title">{{::game.gameTitle | translate}}
+            <div class="fp-thumbnail__provider">
+              {{'APP.PAGE.GAME.PROVIDER_PREFIX' | translate}}&nbsp;{{::game.providerName | translate}}
+            </div>
+          </div>
+          <div class="fp-thumbnail__btn-holder">
+            <a ng-if="::!isLoggedIn" class="fp-btn fp-btn--primary fp-thumbnail__btn" ui-sref="signup" fp-hide-if-login>
+              {{'APP.PAGE.SIGN_UP.HEADING' | translate}}
+            </a>
+            <a ng-if="showLoginBlock" class="fp-btn fp-btn--primary fp-thumbnail__btn" ui-sref="login">
+              {{'APP.FORM.LOGIN.BTN.SUBMIT' | translate}}
+            </a>
+            <a ng-if="::isLoggedIn" class="fp-btn fp-btn--primary fp-thumbnail__btn" href ng-click="playReal()">
+              {{'APP.PAGE.GAME.BTN.REAL.POST' | translate}}
+            </a>
+            <a ng-if="showReview && !demoDisabled" class="fp-btn fp-btn--success fp-thumbnail__btn" href ng-click="playReview()">
+              {{'APP.PAGE.GAME.BTN.DEMO.POST' | translate}}
+            </a>
+            <a ng-if="showDemo && !demoDisabled && !showLoginBlock" class="fp-btn fp-btn--success fp-thumbnail__btn" href ng-click="playDemo()">
+              {{'APP.PAGE.GAME.BTN.DEMO.POST' | translate}}
+            </a>
+          </div>
+          <div class="fp-thumbnail__rtp">RTP: {{ ::game.rtp * 100 | number : 1}}%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

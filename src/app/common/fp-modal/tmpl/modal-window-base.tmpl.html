@@ -1,0 +1,24 @@
+<div modal-render="{{$isRendered}}" tabindex="-1" role="dialog" class="fp-modal"
+     modal-animation-class="fp-modal--fade"
+     modal-in-class="in"
+     ng-class="{'fp-modal--mobile' : isMobile}"
+     ng-style="{'z-index': 1050 + index*10, display: 'block', cursor: 'pointer'}" ng-click="!noCloseBtn ? close($event) : false">
+  <div class="fp-modal__dialog" ng-class="size ? 'fp-modal__dialog--' + size : ''">
+    <div modal-transclude></div>
+
+    <!--DESKTOP LICENSE MESSAGE-->
+    <div ng-if="!disableFooterMessage" ng-class="{'fp-game-window__footer--singup': !!modalFooterMessage && !isMobile}" class="fp-game-window__footer">
+      {{modalFooterMessage}}
+    </div>
+
+    <!--MODAL LICENSE MESSAGE-->
+    <div ng-if="!disableFooterMessage" ng-class="{'fp-game-window__footer--singup': !!modalFooterMessage && isMobile}" class="fp-game-window__footer">
+      {{modalFooterMessage}}
+    </div>
+  </div>
+
+  <a ng-click="close($event)" class="fp-modal__close" ng-if="isMobile && !noCloseBtn">
+    <fp-icon-svg name="icon-close"  class-name="fp-modal__close-icon fp-modal__close-icon--mobile"></fp-icon-svg>
+
+  </a>
+</div>

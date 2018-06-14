@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Muli';
+    src: url('/assets/fonts/muli/muli-bold-webfont.eot');
+    src: url('/assets/fonts/muli/muli-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/muli/muli-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/muli/muli-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/muli/muli-bold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/muli/muli-bold-webfont.svg#karlabold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('/assets/fonts/muli/muli-webfont.eot');
+    src: url('/assets/fonts/muli/muli-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/muli/muli-webfont.woff2') format('woff2'),
+         url('/assets/fonts/muli/muli-webfont.woff') format('woff'),
+         url('/assets/fonts/muli/muli-webfont.ttf') format('truetype'),
+         url('/assets/fonts/muli/muli-webfont.svg#karlaregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}

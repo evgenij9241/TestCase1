@@ -1,0 +1,34 @@
+$fp-color-bg:            rgb(255, 255, 255);
+$fp-color-bg-brand:      #662482;
+$fp-color-shadow:        rgb(167, 229, 251);
+$fp-color-base:          rgb(40, 40, 40);
+//$fp-color-success:       rgb(24, 173, 93);
+$fp-color-success:       rgb(6, 153, 70);
+$fp-color-error:         rgb(239, 100, 77);
+$fp-color-error-bg:      lighten($fp-color-error, 30%);
+$fp-color-contrast:      #FFDE07;
+$fp-color-muted:         rgb(136, 136, 136);
+$fp-color-heading:       $fp-color-bg-brand;
+$fp-color-heading-muted: lighten($fp-color-bg-brand, 15%);
+$fp-color-input-border:  #E5E5E5;
+$fp-color-input-bg:  #DCCCE2;
+$fp-color-separator:     #E5E5E5;
+$fp-color-selection-border:     #E5E5E5;
+$fp-color-selection-bg:  #E5E5E5;
+$fp-color-unique:        rgb(167, 85, 255);
+$fp-color-unique-highlight:     rgb(226, 106, 238);
+$modal-backdrop-bg:      rgba(0, 0, 0, 0.7);
+
+$btn-primary-color: $fp-color-bg-brand;
+$btn-primary-bg : $fp-color-contrast;
+$btn-primary-bg-start : #FFDF07;
+$btn-primary-bg-finish : #F8C20C;
+$btn-primary-border: rgb(242, 165, 25);
+
+$btn-success-color:  $fp-color-contrast;
+$btn-success-bg :    $fp-color-bg-brand;
+$btn-success-bg-start :    #662381;
+$btn-success-bg-finish :    #55186D;
+$btn-secondary-bg: #ffffff;
+$btn-secondary-bg-finish: #E6E6E6;
+$btn-success-border: darken($fp-color-bg-brand, 15%);

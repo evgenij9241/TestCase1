@@ -1,0 +1,33 @@
+<div class="fp-option-group">
+  <div class="fp-option-group__holder">
+
+    <!--<label class="fp-option fp-option&#45;&#45;block" for="input-amount-field">-->
+      <!--<div class="fp-option__content">-->
+        <!--<div class="fp-option__content-holder fp-option__content-holder&#45;&#45;bonus">-->
+          <!--<div class="fp-option__header fp-option__header&#45;&#45;bonus">{{::label | translate}}</div>-->
+          <!--<div class="fp-option__description fp-option__description&#45;&#45;bonus" ng-if="max">{{description | translate:descObj}}</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</label>-->
+
+    <label class="fp-option fp-option--block">
+      <input type="radio" name="radio" ng-model="radio" value="yes">
+      <div class="fp-option__content">
+        <div class="fp-option__content-holder fp-option__content-holder--input">
+
+          <div style="flex: 1">
+            <div class="fp-option__header fp-option__header--bonus">{{::label | translate}}</div>
+            <div class="fp-option__description fp-option__description--bonus" ng-if="max" style="font-size: 15px"><br>{{showDescription()}}</div>
+          </div>
+
+          <div style="flex: 1; padding-left: 5px">
+            <fp-input-currency ng-model="model" min="min" max="max" currency="currency"></fp-input-currency>
+          </div>
+
+        </div>
+
+      </div>
+    </label>
+
+  </div>
+</div>

@@ -1,0 +1,733 @@
+{
+    "APP": {
+        "TITLE": "Lucky Casino Mobile",
+        "FIELD": {
+            "PASSWORD": {
+                "VALIDATION": {
+                    "EXPRESSION": "Enter a password of minimum 6 characters with at least 1 capital letter and 1 number."
+                }
+            },
+            "DOCUMENT_TYPE": {
+                "LABEL": "Document Type",
+                "PLACEHOLDER": "Document Type",
+                "HINT": "Document Type",
+                "VALIDATION": {
+                    "REQUIRED": "Document Type is required"
+                }
+            }
+        },
+        "FIELD_TYPE": {
+            "DATESELECTOR": {
+                "WEEK": {
+                    "PLACEHOLDER": "Week"
+                }
+            }
+        },
+        "FORM": {
+            "LOGIN": {
+                "FIELD": {
+                    "EMAIL": {
+                        "VALIDATION": {
+                            "REQUIRED": "Email is required"
+                        }
+                    },
+                    "PASSWORD": {
+                        "VALIDATION": {
+                            "REQUIRED": "Password is required"
+                        }
+                    }
+                }
+            },
+            "REGISTRATION": {
+                "BTN": {
+                    "SUBMIT_STEP1": "Next Step",
+                    "SUBMIT_STEP2": "Start Your Quest!"
+                },
+                "SUCCESS": "<p class='fp-text--lead'>Registration was success.</p><p>Activation message has been send to your registered email. Please click the link in the email to activate your account.</p><p>If you do not receive the activation email, please check your <b>JUNK</b> or <b>SPAM</b> folder or contact our support.</p>"
+            },
+            "ACCOUNT_ACTIVATION": {
+                "SUCCESS_HEADING": "Welcome! Your email address has been verified, recruit!",
+                "SUCCESS_HEADING_OLD": "Your email address has been verified, recruit!",
+                "SUCCESS": "<p class='fp-text--lead'>Your email address has been verified, recruit!</p><p>General Signup and Lucky shake hands on the agreement to let you in to Lucky\u2019s Casino. Welcome aboard! General Signup now leaves you in Lucky\u2019s safe hands to meet new recruits. Your treasure hunt begins now! Don\u2019t forget to claim your welcome bonus.</p>"
+            },
+            "PHONE_ACTIVATION": {
+                "FIELD": {
+                    "ACTIVATION_CODE": {
+                        "LABEL": "Phone Code",
+                        "PLACEHOLDER": "Activation code",
+                        "HINT": "Please enter the activation code",
+                        "VALIDATION": {
+                            "REQUIRED": "Activation code is required"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "Claim your bonus"
+                }
+            },
+            "FORGOT_PASSWORD": {
+                "FIELD": {
+                    "EMAIL": {
+                        "VALIDATION": {
+                            "REQUIRED": "Email address is required."
+                        }
+                    }
+                }
+            },
+            "RESET_PASSWORD": {
+                "FIELD": {
+                    "PASSWORD": {
+                        "VALIDATION": {
+                            "REQUIRED": "Password is required"
+                        }
+                    },
+                    "CONFIRM_PASSWORD": {
+                        "VALIDATION": {
+                            "REQUIRED": "Password confirmation is required",
+                            "EQUALITY": "Passwords should be equal"
+                        }
+                    }
+                }
+            },
+            "CHANGE_PASSWORD": {
+                "BTN": {
+                    "CONTINUE": "Continue",
+                    "CANCEL": "Cancel"
+                }
+            },
+            "CHECK_PASSWORD": {
+                "FIELD": {
+                    "PASSWORD": {
+                        "VALIDATION": {
+                            "REQUIRED": "Password is required"
+                        }
+                    }
+                }
+            },
+            "DEPOSIT": {
+                "FIELD": {
+                    "AMOUNT_RANGE": {
+                        "BONUS": "Bonus!"
+                    },
+                    "STEP": {
+                        "1": "Select payment method",
+                        "2": "Select an amount",
+                        "3": "Select your bonus"
+                    },
+                    "BONUS_OPTIONS": {
+                        "NO_BONUS": {
+                            "NO_THANKS": "No thanks",
+                            "PROCEED": "Proceed without free spins"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SKIP": "Skip"
+                }
+            },
+            "DEPOSIT_CONFIRMATION": {
+                "BONUS": "Bonus Amount"
+            },
+            "DEPOSIT_STATUS": {
+                "BTN": {
+                    "SUCCESS": "Let's Play",
+                    "PENDING": "Let's Play",
+                    "CANCELLED": "Try Again",
+                    "FAILED": "Try Again",
+                    "REJECTED": "Try Again"
+                },
+                "SUCCESS": "<h2>Thank You</h2>{{amount}} was added to your balance",
+                "CANCELLED": "<h2>Oh, Sorry</h2>Deposit has been canceled.",
+                "FAILED": "<h2>Oh, Sorry</h2>We could not complete your purchase",
+                "REJECTED": "<h2>Oh, Sorry</h2>Deposit has been rejected."
+            },
+            "QUICK_DEPOSIT": {
+                "FIELD": {
+                    "REFERENCE": {
+                        "LABEL": "Choose Credit Card",
+                        "VALIDATION": {
+                            "REQUIRED": "Email is required"
+                        }
+                    },
+                    "AMOUNT": {
+                        "LABEL": "Amount",
+                        "PLACEHOLDER": "amount",
+                        "HINT": "Please enter amount",
+                        "VALIDATION": {
+                            "REQUIRED": "Amount is required"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "Deposit"
+                }
+            },
+            "WITHDRAWAL": {
+                "FIELD": {
+                    "AMOUNT": {
+                        "DESCRIPTION": "from {{currency}}{{min}} to {{currency}}{{max}}"
+                    }
+                }
+            },
+            "WITHDRAWAL_PREFILLING": {
+                "HEADING": "Fill in your details"
+            },
+            "UPLOAD": {
+                "FIELD": {
+                    "FILE": {
+                        "LABEL": "Select the document you want to upload",
+                        "PLACEHOLDER": "(File format can be PDF, JPEG or PNG. Max file size is 2 Mb)",
+                        "HINT": "Please select file",
+                        "VALIDATION": {
+                            "REQUIRED": "File is required"
+                        }
+                    },
+                    "NAME": {
+                        "LABEL": "Document name",
+                        "PLACEHOLDER": "Document name",
+                        "HINT": "Please enter document name",
+                        "VALIDATION": {
+                            "REQUIRED": "Document name is required",
+                            "EXPRESSION": "Name must be letters or digits and 3-10 symbols long"
+                        }
+                    },
+                    "TYPE": {
+                        "LABEL": "Specify the type of document",
+                        "PLACEHOLDER": "Specify the type of document",
+                        "HINT": "Please select document type",
+                        "VALIDATION": {
+                            "REQUIRED": "Document type is required"
+                        }
+                    }
+                },
+                "BTN": {
+                    "SUBMIT": "Upload"
+                }
+            }
+        },
+        "PAGE": {
+            "LOBBY": {
+                "HEADING": "{{totalGames}} Casino Games",
+                "FAVOURITES": "My favorite games",
+                "POPULAR": "Popular Games"
+            },
+            "HOME": {
+                "LINK_LOBBY": "All {{totalGames}} games",
+                "GAMES_LIST": {
+                    "POPULAR": "Popular Games",
+                    "FAVORITE": "My favorite games",
+                    "SIGN_UP": "Sign Up Now",
+                    "ALL_GALES_LINK": "See all games",
+                    "NOTE": "You\u2019ll get <strong>20 Free Spins</strong> on <br/> Star Burst"
+                }
+            },
+            "HEADER": {
+                "CASINO": "Casino",
+                "SIGN_UP": "Sign Up",
+                "LOGIN": "Login"
+            },
+            "HERO": {
+                "ACTION": {
+                    "HEADING": "The Casino Quest",
+                    "COPY": "<span class=\"fp-text--lead\">Meet good Lucky,</span><br/>Lucky is working hard to let you see the rainbow and reap the treasures carried in the end of it.",
+                    "LINK": "Start your Quest"
+                },
+                "FREESPINS": {
+                    "20": "<strong class=\"fp-hero__freespins-strong\">20 free spins</strong>on Starburst!",
+                    "450": "Want 450 free spins?"
+                },
+                "PANE": {
+                    "EXPLORE": {
+                        "HEADING": "Explore the map",
+                        "COPY": "Get free spins as you progress on the quest map"
+                    },
+                    "COLLECT": {
+                        "HEADING": "Collect the gold",
+                        "COPY": "Collect gold as you play. Exchange gold with free spins."
+                    }
+                }
+            },
+            "CASINO": {
+                "PROMO": "You\u2019ll get <strong>20 Free Spins</strong> on Star Burst <br><a ui-sref=\"signup\">Want 450 free spins?</a>"
+            },
+            "LOGIN": {
+                "FOOTER": "Forgot your password?"
+            },
+            "SIGN_UP": {
+                "TITLE": "Sign Up",
+                "HEADER": "Sign Up",
+                "HEADING": "Sign Up",
+                "SUB_HEADING": "And Start Your Quest",
+                "PROMO": "<strong>20 free spins</strong>on Starburst!",
+                "FOOTER": "You almost done",
+                "DONE": "Almost Done",
+                "COMPLETE": "Complete Your Profile"
+            },
+            "REGISTRATION": {
+                "REGISTER_AGREE": "By choosing register I certify I\u2019m <strong>18+</strong> and agree to the <a ui-sref=\"static({pageName:'terms',returnBack:true})\"><strong>Terms & Conditions</strong></a>"
+            },
+            "WELCOME": {
+                "TITLE": "Welcome!",
+                "HEADER": "Welcome!",
+                "CONFIRM": "Confirm your phone number and claim your bonus!",
+                "FILL_DIGITS": "Please fill in the <strong>4 digits</strong> we have sent to your cell phone. <a href=''>Didn\u2019t receive the message?</a>"
+            },
+            "MY_DOCUMENTS": {
+                "TITLE": "My payment details",
+                "HEADER": "Documents",
+                "DOCUMENT_TYPE": {
+                    "IDENTITY": "Identity",
+                    "CREDITCARD": "Credit card",
+                    "ADDRESS": "Address"
+                },
+                "DOCUMENT_STATUS": {
+                    "NOT_APPROVED": "Uploaded, waiting for approval",
+                    "APPROVED": "Approved"
+                },
+                "FILE": "Select the document you want to upload",
+                "FILE_LABEL": "(File format can be PDF, JPEG or PNG. Max file size is 2 Mb)",
+                "NAME": "Give a name for the document",
+                "TYPE": "Specify the type of document",
+                "BUTTON": "Upload",
+                "TABLE": {
+                    "NAME": "Name",
+                    "TYPE": "Type",
+                    "STATUS": "Status"
+                }
+            },
+            "DEPOSIT_PREFILLING": {
+                "HEADING": "Fill in your details"
+            },
+            "WITHDRAWAL": {
+                "HEADER": "Withdrawal up to {{balance}}",
+                "ACCOUNT_DETAILS": "Account Details"
+            },
+            "PROFILE": {
+                "TITLE": "Profile",
+                "TABS": {
+                    "SETTINGS": "Settings",
+                    "CAMPAINGS": "Campaigns",
+                    "LIMITS": "Limits",
+                    "TRANSACTIONS": "Transactions"
+                }
+            },
+            "LIMIT": {
+                "LOSS": {
+                    "TITLE": "Limit of total loss amount",
+                    "HEADING": "Loss limit {{amount}} {{currency}} per {{period}} is active",
+                    "NAV": "Loss",
+                    "FIELD": {
+                        "AMOUNT": {
+                            "LABEL": "Loss amount",
+                            "PLACEHOLDER": "Loss amount",
+                            "VALIDATION": {
+                                "REQUIRED": "Required"
+                            }
+                        },
+                        "PERIOD": {
+                            "LABEL": "Period",
+                            "PLACEHOLDER": "Period"
+                        },
+                        "AUTO_RENEW": {
+                            "LABEL": "Auto renew"
+                        }
+                    },
+                    "BTN": {
+                        "SUBMIT": "Save"
+                    }
+                },
+                "WAGER": {
+                    "TITLE": "Limit of total wager amount",
+                    "HEADING": "Wager limit {{amount}} {{currency}} per {{period}} until {{endTime}}",
+                    "NAV": "Wager",
+                    "FIELD": {
+                        "AMOUNT": {
+                            "LABEL": "Wager amount",
+                            "PLACEHOLDER": "Wager amount",
+                            "VALIDATION": {
+                                "REQUIRED": "Required"
+                            }
+                        },
+                        "PERIOD": {
+                            "LABEL": "Period",
+                            "PLACEHOLDER": "Period"
+                        },
+                        "AUTO_RENEW": {
+                            "LABEL": "Auto renew"
+                        }
+                    },
+                    "BTN": {
+                        "SUBMIT": "Save"
+                    }
+                },
+                "TIME": {
+                    "TITLE": "Restrict session time",
+                    "HEADING": "Your session time limit {{timeLimitAmount}} h",
+                    "NAV": "Time",
+                    "FIELD": {
+                        "SESSION": {
+                            "LABEL": "Session time",
+                            "PLACEHOLDER": "Session time"
+                        }
+                    },
+                    "BTN": {
+                        "SUBMIT": "Save",
+                        "REMOVE": "Remove"
+                    }
+                },
+                "GAMING": {
+                    "TITLE": "Exclude me from all real-money games",
+                    "HEADING": "I am excluded for all real-money games.",
+                    "NAV": "Gaming",
+                    "FIELD": {
+                        "END_DATE": {
+                            "LABEL": "End date"
+                        }
+                    },
+                    "BTN": {
+                        "SUBMIT": "Exclude"
+                    }
+                },
+                "DEPOSIT": {
+                    "TITLE": "Limit of deposit amount",
+                    "TOTAL": "Limit of total amount for deposit",
+                    "ONE_TIME": "Limit of amount per deposit",
+                    "NAV": "Deposit",
+                    "AMOUNT": "Amount: {{amount}} {{currency}}",
+                    "CLOSE": "Close",
+                    "UNTIL": "Until",
+                    "FIELD": {
+                        "AMOUNT": {
+                            "LABEL": "Amount",
+                            "PLACEHOLDER": "Amount",
+                            "VALIDATION": {
+                                "REQUIRED": "Required"
+                            }
+                        },
+                        "PERIOD": {
+                            "LABEL": "Period",
+                            "PLACEHOLDER": "Period"
+                        },
+                        "END_DATE": {
+                            "LABEL": "End date",
+                            "PLACEHOLDER": "End date"
+                        },
+                        "AUTO_RENEW": {
+                            "LABEL": "Auto renew"
+                        }
+                    },
+                    "BTN": {
+                        "SUBMIT": "Save"
+                    }
+                },
+                "WITHDRAWAL": {
+                    "TITLE": "Disable auto-flush (cancel of withdrawal will be disabled during the selected period)",
+                    "NAV": "Withdrawal",
+                    "FIELD": {
+                        "PERIOD": {
+                            "LABEL": "Limit period",
+                            "PLACEHOLDER": "Limit period"
+                        }
+                    },
+                    "SELECT": {
+                        "DAY": "For a day",
+                        "WEEK": "For a week",
+                        "MONTH": "For a month"
+                    },
+                    "BTN": {
+                        "SUBMIT": "Save",
+                        "REMOVE": "Remove"
+                    }
+                }
+            },
+            "CAMPAIGNS": {
+                "PROMOTIONS": {
+                    "TITLE": "Campaigns Promotions",
+                    "NAV": "Promotions"
+                },
+                "BONUSES": {
+                    "TITLE": "Campaigns Bonuses",
+                    "NAV": "Bonuses",
+                    "NO_FOUND": "No bonuses",
+                    "FOUND": "Found total {{total}}",
+                    "TABLE": {
+                        "NAME": "Campaign Name",
+                        "DATE": "Date Received",
+                        "FREE_SPINS": "Freespins",
+                        "TOTAL": "Total",
+                        "BONUS_WIN": "Bonus Win",
+                        "TURNOVER_FACTOR": "Turnover Factor",
+                        "VALID": "Valid Until",
+                        "STATUS": "Status"
+                    }
+                },
+                "LOYALTY": {
+                    "TITLE": "Campaigns Loyalty",
+                    "HEADER": "Loyalty",
+                    "NAV": "Loyalty",
+                    "FIELDS": {
+                        "TIER": "Tier",
+                        "NEXT_TIER": "Next tier",
+                        "POINTS": "Points",
+                        "REQUIRED_POINTS": "Required points",
+                        "POINTS_NEXT_TIER": "Next tier points",
+                        "AWARD_POINTS": "Award points"
+                    },
+                    "TIER": {
+                        "BRONZE": "Bronze",
+                        "SILVER": "Silver",
+                        "GOLD": "Gold",
+                        "PLATINUM": "Platinum"
+                    }
+                }
+            },
+            "TRANSACTIONS": {
+                "GAME": {
+                    "TITLE": "Game transactions",
+                    "NAV": "Game",
+                    "NO_FOUND": "No transactions",
+                    "CLOSE": "Close",
+                    "FOUND": "Found total {{total}}",
+                    "TABLE": {
+                        "CREATED": "Created",
+                        "GAME": "Game",
+                        "BET": "Bet",
+                        "WIN": "Win",
+                        "STATUS": "Status",
+                        "REFERENCE": "Reference"
+                    },
+                    "SELECT": {
+                        "ALL": "All",
+                        "PENDING": "Pending",
+                        "OK": "Ok",
+                        "CANCELLED": "Cancelled",
+                        "REGECTED": "Rejected",
+                        "ERROR": "Error"
+                    }
+                },
+                "BETTING": {
+                    "TITLE": "Betting transactions",
+                    "NAV": "Betting"
+                },
+                "PROMO": {
+                    "TITLE": "Promo transactions",
+                    "NAV": "Promo",
+                    "FROM": "From",
+                    "TO": "To",
+                    "NO_FOUND": "No transactions",
+                    "CLOSE": "Close",
+                    "FOUND": "Found total {{total}} promotions",
+                    "TABLE": {
+                        "CREATED": "Created",
+                        "NAME": "Name",
+                        "AMOUNT": "Amount",
+                        "TYPE": "Win",
+                        "REFERENCE": "Reference"
+                    }
+                },
+                "DEPOSIT": {
+                    "TITLE": "Deposit transactions",
+                    "NAV": "Deposit",
+                    "FROM": "From",
+                    "TO": "To",
+                    "NO_FOUND": "No transactions",
+                    "CLOSE": "Close",
+                    "FOUND": "Found total {{total}}",
+                    "STATUS": "Status",
+                    "TABLE": {
+                        "CREATED": "Created",
+                        "METHOD": "Method",
+                        "AMOUNT": "Amount",
+                        "BONUS": "Win",
+                        "STATUS": "Status",
+                        "REFERENCE": "Reference"
+                    }
+                },
+                "WITHDRAWAL": {
+                    "TITLE": "Withdrawal transactions",
+                    "NAV": "Withdrawal",
+                    "FROM": "From",
+                    "TO": "To",
+                    "STATUS": "Status",
+                    "NO_FOUND": "No transactions",
+                    "CLOSE": "Close",
+                    "FOUND": "Found total {{total}}",
+                    "TABLE": {
+                        "CREATED": "Created",
+                        "METHOD": "Method",
+                        "AMOUNT": "Amount",
+                        "BONUS": "Win",
+                        "STATUS": "Status",
+                        "REFERENCE": "Reference"
+                    }
+                },
+                "LOYALTY": {
+                    "TITLE": "Loyalty transactions",
+                    "NAV": "Loyalty",
+                    "FOUND": "Found total {{total}}",
+                    "TABLE": {
+                        "CREATED": "Created",
+                        "DESCRIPTION": "Description",
+                        "TYPE": "Type",
+                        "STATUS_POINTS": "Status points",
+                        "AWARD_POINTS": "Award points"
+                    },
+                    "NO_FOUND": "No transactions"
+                }
+            },
+            "GAME": {
+                "BTN": {
+                    "DEMO": {
+                        "POST": "Demo"
+                    },
+                    "REAL": {
+                        "POST": "Real"
+                    }
+                },
+                "PROVIDER_PREFIX": "By"
+            },
+            "GAMES_SEARCH": {
+                "INPUT": {
+                    "PLACEHOLDER": "Search"
+                }
+            },
+            "FREE_SPINS": {
+                "HEADER": "Bonuses"
+            }
+        },
+        "STATIC_PAGE": {
+            "RESPONSIBLE_GAMING": {
+                "TITLE": "Responsible Gaming"
+            },
+            "BONUS_TERMS": {
+                "TITLE": "Bonus Terms"
+            },
+            "AFFILIATES": {
+                "TITLE": "Affiliates"
+            },
+            "FOOTER": {
+                "DEPOSIT": {
+                    "HEADING": "Secure deposits with"
+                },
+                "GAMES_TOTAL": {
+                    "HEADING": "{{totalGames}} games provided by"
+                },
+                "GODADDY": "https://seal.godaddy.com/getSeal?sealID=hSoVSpSz4gjmIUhq5veMQTKVNsg4K08JU4DUnPLVpPaqaEu77Fc8zWrD5LbV",
+                "TEXT1": "luckycasino.com is operated by Viral Technology N.V a company incorporated under the laws of Curacao with corporate registration number 123604 and its registered address on Landhuis Groot Kwartier, Groot Kwartierweg 12, Curacao. Its online E-gaming license is 8048/JAZ2011-015.",
+                "TEXT2": "Payment processing is done by Viral Interactive LTD, a company registered in Malta with corporate registration number C66828 and its registered address on 2nd Floor, Cobalt house, Triq Notabile, Birkirikara, BKR 3000. luckycasino.com is a trademark of Fortuity Holdings LTD."
+            }
+        },
+        "MODAL": {
+            "CHECK_BIRTHDATE": {
+                "HEADER": "Birth Date"
+            }
+        },
+        "SIDEBAR": {
+            "BTN": {
+                "UPLOAD_DOCUMENTS": "Upload documents"
+            }
+        },
+        "SLIDE_MENU": {
+            "HEADER": {
+                "GREETING": "Hi,&nbsp;{{user_name}}!",
+                "BALANCE": "Your current balance is",
+                "PROMO": "You\u2019ll get <strong>20 Free Spins</strong> on <br/> Star Burst"
+            },
+            "LINKS": {
+                "LOGIN": "Login",
+                "FORGOT_PASSWORD": "Forgot Password",
+                "ALL_GAMES": "See all games",
+                "SIGN_UP": "Sign Up Now",
+                "DEPOSIT": "Deposit",
+                "CASINO": "Casino",
+                "HOME": "Home"
+            },
+            "ACCOUNT": {
+                "HEADER": "My Account",
+                "DETAILS": "My Details",
+                "PAYMENT_DETAILS": "My Payment Details",
+                "CHANGE_PASSWORD": "Password Change",
+                "LOGOUT": "Logout"
+            },
+            "BANK": {
+                "HEADER": "Bank",
+                "DEPOSIT": "Deposit",
+                "CASHIER": "Cashier",
+                "WITHDRAWAL": "Withdrawal"
+            },
+            "INFORMATION": {
+                "HEADER": "Information",
+                "ABOUT": "About Lucky Casino",
+                "CONTACT_US": "Contact us",
+                "TERMS": "Terms & Conditions",
+                "PRIVACY_POLICY": "Privacy Policy"
+            }
+        },
+        "USER_BALANCE": {
+            "CASH": "Cash",
+            "PROMO": "Promo",
+            "TURNOVER": "Current turnover limit",
+            "AWARD_POINTS": "Gold points"
+        },
+        "CAMPAIGNS": {
+            "HEADER": "Available Promotions",
+            "FREE_SPINS": "{{bonusAmount}} free spins ({{provider}}) for deposit from {{min}} to {{max}}",
+            "PROMO": "{{bonusAmount}} promo money for deposit from {{min}} to {{max}}",
+            "REQUIREMENT": "Wagering Requirement = Bonus x {{turnoverFactor}}",
+            "BTN": "Claim Bonus!"
+        },
+        "PLAY": {
+            "BTN": "Play"
+        },
+        "PROFILE": {
+            "HEADER": "Profile&nbsp;&&nbsp;Settings"
+        },
+        "GIFTS": {
+            "HEADER": "Gifts"
+        },
+        "FREE_SPINS": {
+            "HEADER": "Free Spins",
+            "SHORT": "Free"
+        },
+        "LOYALTY": {
+            "HEADER": "Loyalty",
+            "TIER": {
+                "BRONZE": "Bronze",
+                "SILVER": "Silver",
+                "GOLD": "Gold",
+                "PLATINUM": "Platinum"
+            },
+            "FIELDS": {
+                "TIER": "Loyalty Tier",
+                "NEXT_TIER": "Next Tier",
+                "POINTS": "Current Status Points",
+                "REQUIRED_POINTS": "Required Points for the Next Tier",
+                "POINTS_NEXT_TIER": "Status Points of the Next Tier",
+                "AWARD_POINTS": "Current Award Points"
+            }
+        },
+        "INACTIVITY": {
+            "MESSAGE": "You have been logged out for inactivity reason"
+        },
+        "BUTTONS": {
+            "LOADING": "Loading...",
+            "SHOW_MORE": "Show more",
+            "SUPPORT": "Support"
+        },
+        "BROWSER_HAPPY": "You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience."
+    },
+    "ERR": {
+        
+    },
+    "EXT": {
+        "GAME": {
+            "GROUP": {
+                "MOST_POPULAR": "Popular",
+                "JACKPOT": "Jackpots"
+            }
+        },
+        "COUNTRY": {
+            "RUS": "Russian"
+        }
+    }
+}

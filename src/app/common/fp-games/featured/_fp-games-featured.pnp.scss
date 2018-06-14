@@ -1,0 +1,42 @@
+.fp-games-featured {
+  @include fp-make-container;
+  position: relative;
+  z-index: 5;
+
+  &__header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+  }
+
+  &__all {
+    padding-bottom: $fp-gutter;
+    font-size: $fp-font-size-ml;
+      @media (max-width: $screen-md) {
+        font-size: $fp-font-size-m;
+      }
+      @media (max-width: $screen-xs) {
+        font-size: $fp-font-size-s;
+      }
+  }
+
+  &__footer {
+    text-align: center;
+    padding: $fp-gutter * 2;
+
+    body.fp-dark-theme & .fp-btn--primary {
+      background: transparent;
+      @include fp-make-dark-themed-border;
+    }
+
+  }
+
+  &__footer-notes {
+    font-size: $fp-font-size-s;
+  }
+}

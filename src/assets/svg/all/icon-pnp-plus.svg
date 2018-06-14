@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-pnp-plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-pnp-plus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18.7672,10.2336 L0.5672,10.2336 C0.2536,10.2336 0,9.98 0,9.6672 C0,9.3536 0.2536,9.1 0.5672,9.1 L18.7672,9.1 C19.0808,9.1 19.3344,9.3536 19.3344,9.6672 C19.3344,9.98 19.0808,10.2336 18.7672,10.2336" id="Fill-1" fill="#6F457F"></path>
+        <path d="M9.6672,19.3336 C9.3536,19.3336 9.1,19.08 9.1,18.7672 L9.1,0.5672 C9.1,0.2536 9.3536,0 9.6672,0 C9.9808,0 10.2344,0.2536 10.2344,0.5672 L10.2344,18.7672 C10.2344,19.08 9.9808,19.3336 9.6672,19.3336" id="Fill-3" fill="#6F457F"></path>
+    </g>
+</svg>

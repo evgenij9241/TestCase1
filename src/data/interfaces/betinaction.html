@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+      }
+      #game {
+        min-height: 550px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game"></div>
+
+    <!--{"name":"BIALiveOverview","friendlyName":"live-sports-betting-overview","gameId":250009,"provider":28,"supplier":null,"ratio":null,"gameDisabled":false,"prom-->
+
+    <script>
+      (function () {
+        'use strict';
+
+        var body = document.body,
+            urlParams = getUrlParams(),
+            iframe = null,
+            iframeParent = window.frameElement,
+            parentIframeArgs = iframeParent && iframeParent.getAttribute('data-args') || '',
+            parentIframeArgsMatch = parentIframeArgs.match(/^([^#]*)(?:#(.*))?$/) || [],
+            biaPath = (parentIframeArgsMatch[0] || '').split('/') || [],
+            biaPage = biaPath[0] || '',
+            biaSportIds = biaPath[1] || '',
+            biaHash = biaPath[2] || parentIframeArgsMatch[1] || '';
+
+        if (biaPage) {
+          urlParams.page = biaPage;
+        }
+        if (biaSportIds) {
+          urlParams.sportids = biaSportIds;
+        }
+        if (biaHash) {
+          urlParams.hash = '#' + biaHash;
+        }
+
+        setParentIframeHeight();
+
+        // Init
+        includeScript(normalizeHost(urlParams.host) + '/staticResources/betinactionApi.js', function () {
+          new BetinactionAPI('#game', urlParams);
+        });
+
+        window.addEventListener('message', function (event) {
+          var data = typeof event.data === 'object' && event.data !== null && !Array.isArray(event.data) ? event.data : {},
+              method = data.method || '',
+              params = data.params || {};
+
+          if (method === 'load') {
+            iframe = document.querySelector('#game > iframe');
+            return;
+          }
+          if (!iframe) {
+            return;
+          }
+
+          if (method === 'autoheight') {
+            setParentIframeHeight(params.height);
+          }
+          else if (typeof event.data === 'number') {
+            setParentIframeHeight(event.data);
+          }
+        }, false);
+
+        //
+        // FUNCTIONS
+        //
+
+        function setParentIframeHeight(height) {
+          if (!iframeParent) return;
+          height = parseInt(height, 10) || 0;
+          height = Math.max(body.clientHeight, body.offsetHeight, height);
+          iframeParent.height = height + 'px';
+        }
+
+        function getUrlParams() {
+          return JSON.parse('{"' + location.search.substring(1).replace(/=/g, '":"').replace(/&/g, '","') + '"}');
+        }
+
+        function normalizeHost(host) {
+          return (host || '').replace(/\/+$/, '');
+        }
+
+        function includeScript(url, onload, onerror) {
+          var e = document.createElement('script');
+
+          e.onload = function () {
+            e.onload = null;
+            (onload || function () {}).apply(null, arguments);
+          };
+          e.onerror = function () {
+            e.onerror = null;
+            (onerror || function () {}).apply(null, arguments);
+          };
+
+          e.type = 'text/javascript';
+          e.src = url;
+          document.getElementsByTagName('head')[0].appendChild(e);
+          return e;
+        }
+      })();
+    </script>
+  </body>
+</html>
+
+

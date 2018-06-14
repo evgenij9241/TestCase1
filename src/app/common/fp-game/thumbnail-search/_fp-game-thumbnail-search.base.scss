@@ -1,0 +1,281 @@
+//.fp-thumbnail {
+//  $border-radius: $fp-border-radius-base;
+//  $color-fav: $fp-color-bg;
+//  $color-fav-active: $btn-primary-bg;
+//  $color-overlay: rgba(0, 0, 0, 0.3);
+//  $padding: $fp-gutter / 1.5;
+//
+//  position: relative;
+//
+//  &--dialog {
+//    box-shadow: none;
+//    max-width: 500px;
+//  }
+//
+//  &--loaded &__wrapper {
+//    opacity: 1;
+//    visibility: visible;
+//  }
+//
+//  &--loaded &__loader {
+//    opacity: 0;
+//    visibility: hidden;
+//  }
+//
+//  &__loader {
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    opacity: 1;
+//    visibility: visible;
+//    transition: opacity 0.3s ease;
+//
+//    svg {
+//      width: 100%;
+//      height: 100%;
+//    }
+//
+//
+//  }
+//
+//  &__wrapper {
+//    //position: absolute;
+//    box-shadow: 0px 5px 0px 0px $fp-color-shadow;
+//    margin-bottom: 5px;
+//    border-radius: $border-radius;
+//    line-height: 0;
+//    //top: 0;
+//
+//    opacity: 0;
+//    visibility: hidden;
+//    transition: opacity 0.3s ease;
+//  }
+//
+//  &__label {
+//    $label-color-bg-default: rgb(100, 100, 100);
+//    $label-color-bg-new:     rgb(213, 123, 144);
+//    $label-color-bg-latest:  rgb(105, 162, 249);
+//    $label-color-bg-jackpot: rgb(220, 111, 65);
+//    $label-color-bg-freespins: $fp-color-success;
+//
+//    $label-color-default: rgb(255, 255, 255);
+//    $label-color-jackpot: rgb(249, 239, 70);
+//
+//    $label-font-size: 12px;
+//    $label-size-fold: $label-font-size / 2;
+//    z-index: 5;
+//
+//    @mixin set-label-color ($color) {
+//      background-color: $color;
+//      &:before{
+//        border-color: darken($color, 15%) transparent transparent transparent;
+//      }
+//
+//      &:after{
+//        border-color: $color transparent $color $color;
+//      }
+//    }
+//    position: absolute;
+//    left:     $label-size-fold * -1;
+//    top:      $label-size-fold * 3;
+//    padding:  $label-size-fold $label-size-fold * 3
+//    $label-size-fold $label-size-fold * 3;
+//    font-size:   $label-font-size;
+//    line-height: $label-size-fold * 3;
+//    text-transform: uppercase;
+//    color: $label-color-default;
+//    @include fn-make-text-shadow;
+//
+//    &:before, &:after {
+//      content:      '';
+//      position:     absolute;
+//      display:      block;
+//      border-style: solid;
+//    }
+//
+//    &:before {
+//      bottom:       $label-size-fold * -1;
+//      left:         0;
+//      border-width: $label-size-fold 0 0 $label-size-fold;
+//    }
+//
+//    &:after {
+//      top:    0;
+//      right:  $label-size-fold  * -1;
+//      border-width: $label-size-fold * 5 / 2 $label-size-fold;
+//      -webkit-transform:  rotate(360deg);
+//    }
+//
+//    @include set-label-color($label-color-bg-default);
+//
+//    &--new {
+//      @include set-label-color($label-color-bg-new);
+//    }
+//
+//    &--latest {
+//      @include set-label-color($label-color-bg-latest);
+//    }
+//
+//    &--jackpot {
+//      color: $label-color-jackpot;
+//      @include set-label-color($label-color-bg-jackpot);
+//    }
+//
+//    &--freespins {
+//      @include set-label-color($label-color-bg-freespins);
+//    }
+//  }
+//
+//  &__img {
+//    width: 100%;
+//    //border-radius: $border-radius;
+//    overflow: hidden;
+//  }
+//
+//  &__holder {
+//    border-radius: $border-radius;
+//    overflow: hidden;
+//    position: relative;
+//    width: 100%;
+//    height: 100%;
+//  }
+//
+//  &__overlay {
+//    visibility: hidden;
+//    position: absolute;
+//    width: 100%;
+//    height: 100%;
+//    background-color: $color-overlay;
+//    top:0;
+//    z-index: 3;
+//    display: flex;
+//    align-content: center;
+//    text-align: center;
+//    padding: $padding;
+//  }
+//
+//  &__campaign {
+//    position: absolute;
+//    width: 100%;
+//    height: 100%;
+//    background-image: linear-gradient(-180deg, #000000 0%, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.00) 50%, #000000 100%);
+//    top:0;
+//    z-index: 3;
+//    display: flex;
+//    align-content: center;
+//    text-align: center;
+//    padding: $padding;
+//  }
+//
+//  &__close {
+//    position: absolute;
+//    right: $padding;
+//    top: $fp-gutter!important;
+//    fill: $color-fav;
+//  }
+//
+//  &__campaign-content {
+//    position: absolute;
+//    bottom: $fp-gutter/2;
+//    left: 0;
+//    width: 100%;
+//    color: white;
+//    line-height: $fp-line-height-base;
+//  }
+//
+//  &__fav {
+//    position: absolute;
+//    right: $padding;
+//    top: $fp-gutter/2;
+//  }
+//
+//  &__fav-icon {
+//    fill: $color-fav;
+//  }
+//
+//  &__fav--active &__fav-icon {
+//    fill: $color-fav-active;
+//  }
+//
+//  &--dialog.fp-thumbnail:hover &__img {
+//    filter: none;
+//  }
+//
+//  &:hover &__img {
+//    filter: blur(5px);
+//  }
+//
+//  &:hover &__img--mobile {
+//    filter: none;
+//  }
+//
+//  &:hover &__overlay {
+//    visibility: visible;
+//  }
+//
+//  &--overlay &__overlay {
+//    visibility: visible!important;
+//  }
+//
+//  &__btn-holder {
+//    display: flex;
+//    flex-flow: row wrap;
+//    margin-top: $fp-gutter;
+//    @media (max-width: $screen-lg) {
+//      margin-top: 0;
+//    }
+//  }
+//
+//  &__btn {
+//    flex: 1 1 30px;
+//    margin: 5px;
+//    padding-left: 0;
+//    padding-right: 0;
+//    @media (max-width: $screen-lg) {
+//      font-size: $fp-font-size-s;
+//    }
+//  }
+//
+//  &__content {
+//    width: 100%;
+//    display: inline-block;
+//    flex: 1 0 auto;
+//    margin: 0 auto;
+//    align-self: center;
+//  }
+//
+//  &__title {
+//    color: white;
+//    width: 100%;
+//    line-height: $fp-line-height-base;
+//    padding: $fp-gutter / 2 0;
+//    @include fn-make-text-shadow;
+//    margin-top: $fp-gutter;
+//    @media (max-width: $screen-lg) {
+//      margin-top: $fp-gutter * 2;
+//      font-size: $fp-font-size-s;
+//    }
+//
+//    &--mobile {
+//      font-size: $fp-font-size-xs;
+//      color: $fp-color-base;
+//      padding: $fp-gutter / 4 $fp-gutter / 2;
+//      height: 30px;
+//      background: $fp-color-bg;
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      line-height: 1;
+//
+//      > div {
+//        flex: 1 1 auto;
+//      }
+//    }
+//  }
+//
+//  &__provider {
+//    color: white;
+//    font-size: $fp-font-size-xs;
+//  }
+//
+//}

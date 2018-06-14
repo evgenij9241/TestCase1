@@ -1,0 +1,17 @@
+<div class="radio-group">
+  <div ng-repeat="(key, option) in options track by $index" class="radio">
+    <label>
+
+      <input type="radio"
+             id="{{name + '_'+ $index}}"
+             tabindex="0"
+             name="{{name}}"
+             ng-value="option['value']"
+             ng-model="group.model">
+
+        <fp-compile-html html="{{option['name']}}"></fp-compile-html>
+
+    </label>
+  </div>
+</div>
+
