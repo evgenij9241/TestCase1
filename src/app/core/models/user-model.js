@@ -6,7 +6,7 @@
 
     model.getCountry = function () {
       return new Promise(function (resolve) {
-        return resolve('SWE')
+        return resolve('MTL') //'SWE' - is Pay And Play county, 'GBR' - dark theme, 'MLT' - main design
       })
     };
 

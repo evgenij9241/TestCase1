@@ -13,16 +13,17 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log, $cookies, $rootScope, $interval, $timeout, PayAndPlay) {
+  function runBlock($log, $cookies, $rootScope, $interval, $timeout, PayAndPlay, User) {
+    User.getCountry().then(function (country) {
+      $rootScope.dark = country === 'GBR';
+    });
+
+    User.isLoggedIn().then(function (result) {
+      $rootScope.isLoggedIn = result;
+    });
 
     PayAndPlay.isPayAndPlayCountry().then(function (result) {
-
-
-      $rootScope.dark = false;
-      $rootScope.isLoggedIn = false;
       $rootScope.isPayAndPlayCountry = result;
-
-
     });
 
 

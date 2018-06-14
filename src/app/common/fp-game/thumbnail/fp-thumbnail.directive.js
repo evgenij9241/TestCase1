@@ -6,7 +6,7 @@
   };
 
   angular.module('finnplay.common.game.thumbnail', [])
-    .directive('fpThumbnail', function ($rootScope, $state, $http, $filter, Game, User, fpModal) {
+    .directive('fpThumbnail', function ($rootScope, $state, $http, $filter, Game, User, fpModal, Fn) {
       return {
         restrict: 'AE',
         templateUrl: '/app/common/fp-game/thumbnail/fp-thumbnail.tmpl.html',
@@ -19,8 +19,8 @@
           demoDisabled: '='
         },
         link: function (scope, element, attrs) {
-          var isMobile = $rootScope.isMobile;
-          scope.isMobile = $rootScope.isMobile;
+          var isMobile = Fn.isMobile;
+          scope.isMobile = Fn.isMobile;
           scope.isPayAndPlayCountry = $rootScope.isPayAndPlayCountry;
 
           var game = scope.game;
